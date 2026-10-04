@@ -23,3 +23,7 @@ The current benchmark scope is **seed 67 only**; the planned three-seed expansio
 Keep each campaign's cohort, settings, repetition, and coverage with its score. These reports include interrupted runs, infrastructure failures, and unattempted slots; they are not a pooled leaderboard. Recovery runs are separate results, and unattempted work is not measured zero capability.
 
 This repository contains the slide PDF, talking points, reports, model cards, and references—not private rehearsal notes, raw conversations, or production scripts. Machine-specific source paths were shortened in the analysis Markdown and JSON; the original per-run reports, CSVs, and model cards are unchanged.
+
+## How to read the results
+
+Right + wrong = scored. Scored + unscored = scheduled. Attempted requests, retries, provider/tool events, campaign lifecycle and teardown are separate. The corrected [question ledger](reports/ori-recent-runs-2026-10-04/question-scoring-ledger.json) and [presentation-status ledger](reports/ori-recent-runs-2026-10-04/presentation-status-ledger.json) keep these distinctions explicit; cleanup does not invalidate recorded answers. The [seed explanation](references/data/ref-12-seed-mechanics.md) separates generated environments from task compilation and model randomness.

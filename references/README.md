@@ -1,6 +1,6 @@
 # References and result sources
 
-The numbered files below are the evidence cited on the slides' References page. References 1–6 and 8 are byte-identical aggregate CSVs; references 7 and 9 are sanitized, derived diagnostics, not additional campaigns.
+The numbered files below are the evidence cited on the slides' References page. References 1–6 and 8 are byte-identical aggregate CSVs; references 7 and 9 are sanitized, derived diagnostics, not additional campaigns. References 10–11 provide the corrected final scoring/coverage interpretation, while 12 documents the seed mechanics. Historical lifecycle fields in the original CSVs are not benchmark correctness verdicts.
 
 | Reference | Source | Slide | File |
 |---|---|---|---|
@@ -9,10 +9,14 @@ The numbered files below are the evidence cited on the slides' References page. 
 | [3] | DeepSeek-v4.1-Flash: seed 67, September 29–30 | 27 | [ref-03-deepseek.csv](data/ref-03-deepseek.csv) |
 | [4] | September 28 hosted campaign: results, login-provider cutoffs and usage | 26, 28 | [ref-04-hosted.csv](data/ref-04-hosted.csv) |
 | [5] | Three-repetition seed-67 campaign: interrupted | 29 | [ref-05-three-repetitions.csv](data/ref-05-three-repetitions.csv) |
-| [6] | Qwen3.8 Flash and GPT-6 Luna recovery: partial | 30 | [ref-06-recovery.csv](data/ref-06-recovery.csv) |
+| [6] | Qwen3.8 Flash and GPT-6 Luna: separate recovery | 30 | [ref-06-recovery.csv](data/ref-06-recovery.csv) |
 | [7] | Sanitized provider HTTP 400 failure summary | 31 | [ref-07-http-errors.csv](data/ref-07-http-errors.csv) |
-| [8] | Local Qwen five-route aggregate: scores, attempts and partial states | 25 | [ref-08-local-qwen.csv](data/ref-08-local-qwen.csv) |
+| [8] | Local Qwen five-route original aggregate: scores, attempts and lifecycle metadata | 25 | [ref-08-local-qwen.csv](data/ref-08-local-qwen.csv) |
 | [9] | Retained tool-output size, reconstructed request core and historical failures | 31 | [ref-09-request-size.json](data/ref-09-request-size.json) |
+
+| [10] | Corrected final right/wrong/scored/unscored counts and causes | 19, 25–31 | [Question scoring ledger](../reports/ori-recent-runs-2026-10-04/question-scoring-ledger.json) |
+| [11] | Coverage and cause-specific presentation labels; teardown separate | 25–31 | [Presentation status ledger](../reports/ori-recent-runs-2026-10-04/presentation-status-ledger.json) |
+| [12] | Seed streams, environment generation and separate task compilation | 4 | [Seed and generation mechanics](data/ref-12-seed-mechanics.md) |
 
 All seven recent campaigns, including the local Qwen rerun, are available under [reports/runs](../reports/runs/) and in the dated [history archive](../history/2026-10-04/README.md). The [recent-run analysis and model cards](../reports/ori-recent-runs-2026-10-04/) retain their run/cohort and repetition boundaries. The copies here are citation aliases, not additional observations.
 
