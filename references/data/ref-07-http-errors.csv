@@ -1,0 +1,7 @@
+campaign,model,mcp_name,http_status,latest_cells,historical_failed_attempts,repetition_1_latest,repetition_2_latest,repetition_3_latest
+original,gpt-6-luna-nous,armadin,400,5,5,1,2,2
+original,gpt-6-luna-nous,steven_external,400,1,1,0,1,0
+original,glm-5.3-flash-nous,armadin,400,6,6,2,2,2
+original,glm-5.3-flash-nous,steven_external,400,1,1,1,0,0
+original,deepseek-v4.1-flash-nous,armadin,400,5,5,1,2,2
+recovery,qwen3.8-flash-nous,armadin,400,16,34,6,9,1

@@ -1,0 +1,2 @@
+# Preserve exported reports, CSVs, and document bytes exactly.
+* -text
