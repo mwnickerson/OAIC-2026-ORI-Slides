@@ -25,7 +25,7 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 
 ## 04 — [Same seed. Same test.](slides/ori-oaic-2026.pdf#page=4)
 
-- Seed 67 controls graph generation and concrete questions for these conference runs. With code and configuration fixed, I can regenerate the test.
+- Seed 67 controls graph generation and concrete questions for these conference runs. With code and configuration fixed, I can regenerate the test. I am keeping the current benchmark on seed 67.
 - That does not make model inference deterministic or make familiar attack techniques unfamiliar. It changes the graph facts the model must inspect.
 - I checked repeatability by generating repeatedly, diffing JSON, and inspecting paths in BloodHound. A matching seed is only the beginning of that check.
 
@@ -131,9 +131,9 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 
 ## 21 — [One run isn't the whole story](slides/ori-oaic-2026.pdf#page=21)
 
-- Repeating the same seed asks whether a model and route give similar results on the same test.
+- I am sticking with seed 67 for the current benchmark, not adding a three-seed run. The three passes repeat the same 50 questions on the same generated graph.
 - We have three-pass results and a separate recovery campaign, but the full six-model campaign was interrupted. Coverage stays beside scores.
-- Changing seeds asks about another generated environment. That remains future work; repeated tests don't establish generalization or deterministic API sampling.
+- Repeated passes do not establish generalization across environments, and a fixed data seed does not guarantee identical model sampling.
 
 ## 22 — [ORI in action](slides/ori-oaic-2026.pdf#page=22)
 
@@ -158,16 +158,16 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 ## 25 — [The questions that never ran](slides/ori-oaic-2026.pdf#page=25)
 
 - The local Qwen JSON rerun attempted 205/250 scheduled tasks. Correct counts were Direct 29/50, BloodHound 34/50, Mordavid 2/50, Armadin 20/50, and Steven 35/50.
-- Mordavid attempted only five. Three consecutive provider-protocol infrastructure failures triggered a cutoff, leaving 45 unexecuted.
+- Every route except Mordavid attempted all 50. Mordavid attempted only five; three consecutive provider-protocol infrastructure failures triggered a cutoff, leaving 45 unexecuted. The full [five-route aggregate](references/data/ref-08-local-qwen.csv) retains the partial/cleanup labels.
 - Steven attempted all 50: 35 correct, nine incorrect, five invalid outputs, and one infrastructure error. Cleanup failed afterward, so the route remained partial.
 - The campaign failed and its report is partial. I need useful answers and a setup that reliably gets through the run.
 
 ## 26 — [Direct and MCP can disagree](slides/ori-oaic-2026.pdf#page=26)
 
 - September 28 used NOUS-hosted GLM-5.3-Flash and Qwen-3.8-Flash, not the local Qwen setup.
-- All four displayed groups attempted 50 questions once. GLM scored Direct 44/50 versus BloodHound MCP 26/50; Qwen scored 31/50 versus 24/50.
+- All four NOUS-hosted groups attempted 50 questions once. GLM scored Direct 44/50 versus BloodHound MCP 26/50; Qwen scored 31/50 versus 24/50.
 - Direct used `direct-v2`; MCP used `mcp-answer-v1`. These observations don't establish a general MCP penalty. The larger campaign was partial, and infrastructure cutoffs elsewhere aren't a reasoning ranking.
-- Four login-provider groups each stopped after 3/50 attempts: three infrastructure failures, zero graded answers, and 47 missing. That is not a measured zero reasoning score, and the report does not establish authentication as the cause.
+- Four login-provider groups—GPT-6 Luna Direct, GPT-6 Luna BloodHound MCP, GPT-5.6 Luna Direct, and GPT-5.6 Luna BloodHound MCP—each stopped after 3/50 attempts: three infrastructure failures, zero graded answers, and 47 missing. That is not a measured zero reasoning score, and the report does not establish authentication as the cause.
 
 ## 27 — [The model–MCP matchup](slides/ori-oaic-2026.pdf#page=27)
 
@@ -198,8 +198,8 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 ## 31 — [An API rejection isn't a wrong answer](slides/ori-oaic-2026.pdf#page=31)
 
 - The original campaign recorded 18 latest HTTP 400 outcomes: 16 on Armadin and two on Steven.
-- Recovery still had 16 latest HTTP 400 outcomes on Qwen with Armadin, plus 49 unexecuted evaluations after an infrastructure cutoff.
-- The [recent report](reports/ori-recent-runs-2026-10-04/recent-runs-executive-summary.md) describes a 3,710,830-character tool result followed by an approximately 4.49 MB reconstructed request core—not a measured HTTP body.
+- Recovery still had 16 latest HTTP 400 outcomes on Qwen with Armadin, plus 49 unexecuted evaluations after an infrastructure cutoff. Its 34 historical failed attempts split into 26 on records ultimately ending in infrastructure error and eight on records that ultimately completed; those are attempts, not distinct failed questions.
+- The [bounded size audit](references/data/ref-09-request-size.json) verified a 3,710,830-character `analyze_group_permissions` result. Saved messages plus 97 tool schemas reconstruct to about 4.49 MB of core JSON—not captured full-request or wire bytes.
 - I suspect oversized requests or accumulated context. The retained error is only Bad Request; the provider's rejection body and size limit weren't saved, so that cause isn't confirmed.
 - These are infrastructure failures and coverage gaps, not wrong reasoning. Recovery doesn't establish a fix.
 

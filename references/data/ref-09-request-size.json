@@ -1,0 +1,22 @@
+{
+  "schema_version": "ori-slide-safe-size-evidence-v1",
+  "evidence_status": "Independently reproduced saved-content size and reconstructed request core; not measured wire bytes",
+  "tool_name": "analyze_group_permissions",
+  "tool_output_characters": 3710830,
+  "tool_output_utf8_bytes": 3710830,
+  "matching_failed_attempts": 4,
+  "reconstructed_messages_and_tools_core": {
+    "compact_utf8_bytes_min": 4486453,
+    "compact_utf8_bytes_max": 4486502,
+    "approx_decimal_mb": 4.49,
+    "includes_retained_tool_schemas": 97,
+    "is_full_request": false,
+    "is_wire_measurement": false
+  },
+  "historical_http400_attempts": 34,
+  "on_ultimately_infra_error_records": 26,
+  "on_ultimately_completed_records": 8,
+  "caveat": "Saved tool output and ~4.49 MB reconstructed core are verified. Exact rejected request and provider error body are unavailable; why HTTP 400 occurred and any size/context limit remain unknown. No causal size threshold is established.",
+  "campaign": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+  "scope": "Selected retained failed-attempt evidence, not full campaign wire telemetry. Ultimately completed records need not be correct answers."
+}
