@@ -14,7 +14,7 @@ The numbered files below are the evidence cited on the slides' References page. 
 | [8] | Local Qwen five-route aggregate: scores, attempts and partial states | 25 | [ref-08-local-qwen.csv](data/ref-08-local-qwen.csv) |
 | [9] | Retained tool-output size, reconstructed request core and historical failures | 31 | [ref-09-request-size.json](data/ref-09-request-size.json) |
 
-All seven recent campaigns, including the local Qwen rerun, are available under [reports/runs](../reports/runs/). The [recent-run analysis and model cards](../reports/ori-recent-runs-2026-10-04/) retain their run/cohort and repetition boundaries. The copies here are citation aliases, not additional observations.
+All seven recent campaigns, including the local Qwen rerun, are available under [reports/runs](../reports/runs/) and in the dated [history archive](../history/2026-10-04/README.md). The [recent-run analysis and model cards](../reports/ori-recent-runs-2026-10-04/) retain their run/cohort and repetition boundaries. The copies here are citation aliases, not additional observations.
 
 Reference 9 independently checks retained-content sizes; it does not include raw tool content. The 4.49 MB figure describes compact JSON containing saved messages and 97 tool schemas, not a captured full request or HTTP wire measurement. The rejection body, any provider size/context limit and the cause of HTTP 400 remain unknown. Historical attempts and latest task outcomes are different counts.
 

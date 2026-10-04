@@ -16,6 +16,7 @@ The October 4, 2026 report snapshot covers **seven campaigns, 114 aggregate rows
 - [Full analysis — PDF](reports/ori-recent-runs-2026-10-04/analysis.pdf) · [Markdown](reports/ori-recent-runs-2026-10-04/analysis.md) · [JSON](reports/ori-recent-runs-2026-10-04/analysis.json)
 - [All model cards](reports/ori-recent-runs-2026-10-04/model-cards/README.md) — Markdown, SVG, and PNG for each pairing
 - [Campaign reports and original CSV results](reports/README.md)
+- [Dated run history and scoring/cause ledgers](history/README.md)
 
 The current benchmark scope is **seed 67 only**; the planned three-seed expansion is cancelled. The existing three-pass results repeat the same 50 questions, not three environments or 150 unique questions. Earlier development scorecards in the talk remain historical context, not additional current-seed cohorts.
 

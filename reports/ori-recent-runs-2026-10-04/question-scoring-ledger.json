@@ -1,0 +1,3882 @@
+{
+  "description": "Per-result scored questions, unscored scheduled questions and public question-outcome causes. Repetitions remain separate; no pooled accuracy.",
+  "rows": [
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 31,
+      "incorrect": 3,
+      "scored": 34,
+      "scheduled": 50,
+      "unscored": 16,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 34,
+        "QUERY_ERROR": 3,
+        "OUTPUT_INVALID": 13
+      },
+      "unscored_causes": {
+        "QUERY_ERROR": 3,
+        "OUTPUT_INVALID": 13
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 13,
+        "QUERY_ERROR": 3
+      },
+      "tokens_input": 72877,
+      "tokens_output": 223753,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/0"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 35,
+      "incorrect": 2,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 37,
+        "OUTPUT_INVALID": 12,
+        "QUERY_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 12,
+        "QUERY_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 12,
+        "QUERY_ERROR": 1
+      },
+      "tokens_input": 72877,
+      "tokens_output": 222265,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/1"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 30,
+      "incorrect": 4,
+      "scored": 34,
+      "scheduled": 50,
+      "unscored": 16,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 34,
+        "QUERY_ERROR": 4,
+        "OUTPUT_INVALID": 12
+      },
+      "unscored_causes": {
+        "QUERY_ERROR": 4,
+        "OUTPUT_INVALID": 12
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 12,
+        "QUERY_ERROR": 4
+      },
+      "tokens_input": 72877,
+      "tokens_output": 223611,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/2"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 28,
+      "incorrect": 17,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 5
+      },
+      "tokens_input": 5190803,
+      "tokens_output": 269754,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/3"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 26,
+      "incorrect": 18,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 6
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 6
+      },
+      "tokens_input": 8921784,
+      "tokens_output": 270805,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/4"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 28,
+      "incorrect": 17,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 5
+      },
+      "tokens_input": 5799142,
+      "tokens_output": 243653,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/5"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 12,
+      "incorrect": 26,
+      "scored": 38,
+      "scheduled": 50,
+      "unscored": 12,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 6,
+        "COMPLETED": 38,
+        "OUTPUT_INVALID": 6
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 6,
+        "OUTPUT_INVALID": 6
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 6,
+        "OUTPUT_INVALID": 6
+      },
+      "tokens_input": 16752225,
+      "tokens_output": 299148,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/6"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 14,
+      "incorrect": 23,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 37,
+        "INFRA_ERROR": 9,
+        "OUTPUT_INVALID": 4
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 9,
+        "OUTPUT_INVALID": 4
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 9,
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 16081333,
+      "tokens_output": 260831,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/7"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 1,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 1,
+        "MISSING": 49
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 1,
+        "MISSING": 49
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "MISSING": 49
+      },
+      "tokens_input": 58620,
+      "tokens_output": 3618,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/8"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 21,
+      "incorrect": 24,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 5
+      },
+      "tokens_input": 5076049,
+      "tokens_output": 224279,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/9"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 26,
+      "incorrect": 19,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 5
+      },
+      "tokens_input": 5078756,
+      "tokens_output": 229593,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/10"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 23,
+      "incorrect": 21,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 6
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 6
+      },
+      "tokens_input": 4060369,
+      "tokens_output": 208992,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/11"
+    },
+    {
+      "run": "seed67-qwen38flash-gpt6luna-recovery-20261002",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 49,
+      "incorrect": 1,
+      "scored": 50,
+      "scheduled": 50,
+      "unscored": 0,
+      "attempted": 50,
+      "display_status": "Scores recorded \u00b7 teardown note",
+      "question_outcomes": {
+        "COMPLETED": 50
+      },
+      "unscored_causes": {},
+      "attempt_error_tallies": {},
+      "tokens_input": 1000954,
+      "tokens_output": 55692,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/0/results/12"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 40,
+      "incorrect": 1,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 41,
+        "QUERY_TIMEOUT": 6,
+        "QUERY_ERROR": 3
+      },
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 6,
+        "QUERY_ERROR": 3
+      },
+      "attempt_error_tallies": {
+        "QUERY_ERROR": 3,
+        "QUERY_TIMEOUT": 6
+      },
+      "tokens_input": 69514,
+      "tokens_output": 27603,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/0"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 43,
+      "incorrect": 2,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "QUERY_TIMEOUT": 1,
+        "QUERY_ERROR": 4
+      },
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 1,
+        "QUERY_ERROR": 4
+      },
+      "attempt_error_tallies": {
+        "QUERY_ERROR": 4,
+        "QUERY_TIMEOUT": 1
+      },
+      "tokens_input": 69514,
+      "tokens_output": 27166,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/1"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 45,
+      "incorrect": 0,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "QUERY_TIMEOUT": 2,
+        "QUERY_ERROR": 3
+      },
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 2,
+        "QUERY_ERROR": 3
+      },
+      "attempt_error_tallies": {
+        "QUERY_ERROR": 3,
+        "QUERY_TIMEOUT": 2
+      },
+      "tokens_input": 69514,
+      "tokens_output": 25151,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/2"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 47,
+      "incorrect": 2,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 49,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1
+      },
+      "tokens_input": 6759534,
+      "tokens_output": 63188,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/3"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 49,
+      "incorrect": 0,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 49,
+        "OUTPUT_INVALID": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 1729339,
+      "tokens_output": 69862,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/4"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 49,
+      "incorrect": 0,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 49,
+        "OUTPUT_INVALID": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 1825229,
+      "tokens_output": 64001,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/5"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 32,
+      "incorrect": 16,
+      "scored": 48,
+      "scheduled": 50,
+      "unscored": 2,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 48,
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 1
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 6939957,
+      "tokens_output": 65526,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/6"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 32,
+      "incorrect": 15,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 7325529,
+      "tokens_output": 61717,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/7"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 31,
+      "incorrect": 16,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 8102137,
+      "tokens_output": 61169,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/8"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 50,
+      "incorrect": 0,
+      "scored": 50,
+      "scheduled": 50,
+      "unscored": 0,
+      "attempted": 50,
+      "display_status": "Scores recorded \u00b7 teardown note",
+      "question_outcomes": {
+        "COMPLETED": 50
+      },
+      "unscored_causes": {},
+      "attempt_error_tallies": {},
+      "tokens_input": 955622,
+      "tokens_output": 53920,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/9"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 48,
+      "incorrect": 0,
+      "scored": 48,
+      "scheduled": 50,
+      "unscored": 2,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 48,
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 1042358,
+      "tokens_output": 54367,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/10"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 19,
+      "incorrect": 0,
+      "scored": 19,
+      "scheduled": 50,
+      "unscored": 31,
+      "attempted": 23,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 19,
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 3,
+        "MISSING": 27
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 3,
+        "MISSING": 27
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 27,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 393957,
+      "tokens_output": 28419,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/11"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 38,
+      "incorrect": 3,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 41,
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 4
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 4
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 4
+      },
+      "tokens_input": 70427,
+      "tokens_output": 155420,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/12"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 39,
+      "incorrect": 4,
+      "scored": 43,
+      "scheduled": 50,
+      "unscored": 7,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 43,
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 2
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 2
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 2
+      },
+      "tokens_input": 70427,
+      "tokens_output": 126222,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/13"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 36,
+      "incorrect": 1,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 37,
+        "OUTPUT_INVALID": 9,
+        "QUERY_ERROR": 4
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 9,
+        "QUERY_ERROR": 4
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 9,
+        "QUERY_ERROR": 4
+      },
+      "tokens_input": 68115,
+      "tokens_output": 126720,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/14"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 23,
+      "incorrect": 17,
+      "scored": 40,
+      "scheduled": 50,
+      "unscored": 10,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 40,
+        "OUTPUT_INVALID": 10
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 10
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 10
+      },
+      "tokens_input": 3873158,
+      "tokens_output": 238233,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/15"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 26,
+      "incorrect": 12,
+      "scored": 38,
+      "scheduled": 50,
+      "unscored": 12,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 38,
+        "OUTPUT_INVALID": 12
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 12
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 12
+      },
+      "tokens_input": 3420612,
+      "tokens_output": 206900,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/16"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 24,
+      "incorrect": 13,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 37,
+        "OUTPUT_INVALID": 13
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 13
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 13
+      },
+      "tokens_input": 3580255,
+      "tokens_output": 215812,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/17"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 15,
+      "incorrect": 24,
+      "scored": 39,
+      "scheduled": 50,
+      "unscored": 11,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 39,
+        "OUTPUT_INVALID": 9,
+        "INFRA_ERROR": 2
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 9,
+        "INFRA_ERROR": 2
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 9
+      },
+      "tokens_input": 11053249,
+      "tokens_output": 237281,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/18"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 19,
+      "incorrect": 22,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 41,
+        "OUTPUT_INVALID": 7,
+        "INFRA_ERROR": 2
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "INFRA_ERROR": 2
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 7
+      },
+      "tokens_input": 12339853,
+      "tokens_output": 261255,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/19"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 17,
+      "incorrect": 20,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 37,
+        "OUTPUT_INVALID": 10,
+        "INFRA_ERROR": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 10,
+        "INFRA_ERROR": 3
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "OUTPUT_INVALID": 10
+      },
+      "tokens_input": 10473220,
+      "tokens_output": 238148,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/20"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 27,
+      "incorrect": 18,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 3604580,
+      "tokens_output": 182699,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/21"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 30,
+      "incorrect": 15,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 3784174,
+      "tokens_output": 168821,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/22"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 30,
+      "incorrect": 13,
+      "scored": 43,
+      "scheduled": 50,
+      "unscored": 7,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 43,
+        "OUTPUT_INVALID": 7
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 7
+      },
+      "tokens_input": 8506073,
+      "tokens_output": 158462,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/23"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 32,
+      "incorrect": 5,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 37,
+        "TASK_TIMEOUT": 5,
+        "OUTPUT_INVALID": 3,
+        "QUERY_ERROR": 5
+      },
+      "unscored_causes": {
+        "TASK_TIMEOUT": 5,
+        "OUTPUT_INVALID": 3,
+        "QUERY_ERROR": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3,
+        "QUERY_ERROR": 5,
+        "TASK_TIMEOUT": 5
+      },
+      "tokens_input": 67660,
+      "tokens_output": 122262,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/24"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 35,
+      "incorrect": 3,
+      "scored": 38,
+      "scheduled": 50,
+      "unscored": 12,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 38,
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 5
+      },
+      "tokens_input": 75667,
+      "tokens_output": 160100,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/25"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 32,
+      "incorrect": 3,
+      "scored": 35,
+      "scheduled": 50,
+      "unscored": 15,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 35,
+        "OUTPUT_INVALID": 10,
+        "QUERY_ERROR": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 10,
+        "QUERY_ERROR": 5
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 10,
+        "QUERY_ERROR": 5
+      },
+      "tokens_input": 75788,
+      "tokens_output": 187569,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/26"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 28,
+      "incorrect": 18,
+      "scored": 46,
+      "scheduled": 50,
+      "unscored": 4,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 46,
+        "OUTPUT_INVALID": 4
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 3717946,
+      "tokens_output": 143970,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/27"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 27,
+      "incorrect": 20,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3
+      },
+      "tokens_input": 4638146,
+      "tokens_output": 133760,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/28"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 27,
+      "incorrect": 19,
+      "scored": 46,
+      "scheduled": 50,
+      "unscored": 4,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 46,
+        "OUTPUT_INVALID": 4
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 4579378,
+      "tokens_output": 137714,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/29"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 25,
+      "incorrect": 22,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 2
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 2
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 2
+      },
+      "tokens_input": 11429731,
+      "tokens_output": 137305,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/30"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 26,
+      "incorrect": 18,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 9656462,
+      "tokens_output": 143448,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/31"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 22,
+      "incorrect": 24,
+      "scored": 46,
+      "scheduled": 50,
+      "unscored": 4,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 46,
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 2
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 2
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 2
+      },
+      "tokens_input": 10767464,
+      "tokens_output": 140356,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/32"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 35,
+      "incorrect": 12,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3
+      },
+      "tokens_input": 3543294,
+      "tokens_output": 112405,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/33"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 35,
+      "incorrect": 12,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3
+      },
+      "tokens_input": 3214823,
+      "tokens_output": 111013,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/34"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 34,
+      "incorrect": 13,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3
+      },
+      "tokens_input": 3601558,
+      "tokens_output": 117168,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/35"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 6,
+      "incorrect": 0,
+      "scored": 6,
+      "scheduled": 50,
+      "unscored": 44,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "TASK_TIMEOUT": 44,
+        "COMPLETED": 6
+      },
+      "unscored_causes": {
+        "TASK_TIMEOUT": 44
+      },
+      "attempt_error_tallies": {
+        "TASK_TIMEOUT": 44
+      },
+      "tokens_input": 5781,
+      "tokens_output": 3469,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/36"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 6,
+      "incorrect": 1,
+      "scored": 7,
+      "scheduled": 50,
+      "unscored": 43,
+      "attempted": 21,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "TASK_TIMEOUT": 13,
+        "COMPLETED": 7,
+        "INTERRUPTED": 1,
+        "MISSING": 29
+      },
+      "unscored_causes": {
+        "TASK_TIMEOUT": 13,
+        "INTERRUPTED": 1,
+        "MISSING": 29
+      },
+      "attempt_error_tallies": {
+        "INTERRUPTED": 1,
+        "MISSING": 29,
+        "TASK_TIMEOUT": 13
+      },
+      "tokens_input": 5938,
+      "tokens_output": 3994,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/37"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/38"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/39"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/40"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/41"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/42"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/43"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/44"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/45"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/46"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/47"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/48"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/49"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/50"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/51"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/52"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/53"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/54"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/55"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/56"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/57"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/58"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "muse-glimmer-30b",
+      "provider": "openai-compat",
+      "provider_model": "muse-glimmer-30b",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/59"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/60"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/61"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/62"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/63"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/64"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/65"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/66"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/67"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/68"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/69"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/70"
+    },
+    {
+      "run": "seed67-step1-six-models-3rep-3mcp-20260930",
+      "report_status": "partial",
+      "model": "gemma-4-26b-it-qat-q4-0-64k",
+      "provider": "openai-compat",
+      "provider_model": "gemma-4-26b-it-qat-q4_0-64k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 3,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 0,
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "question_outcomes": {
+        "MISSING": 50
+      },
+      "unscored_causes": {
+        "MISSING": 50
+      },
+      "attempt_error_tallies": {
+        "MISSING": 50
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/1/results/71"
+    },
+    {
+      "run": "deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 29,
+      "incorrect": 4,
+      "scored": 33,
+      "scheduled": 50,
+      "unscored": 17,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 33,
+        "TASK_TIMEOUT": 12,
+        "QUERY_ERROR": 4,
+        "QUERY_TIMEOUT": 1
+      },
+      "unscored_causes": {
+        "TASK_TIMEOUT": 12,
+        "QUERY_ERROR": 4,
+        "QUERY_TIMEOUT": 1
+      },
+      "attempt_error_tallies": {
+        "QUERY_ERROR": 4,
+        "QUERY_TIMEOUT": 1,
+        "TASK_TIMEOUT": 12
+      },
+      "tokens_input": 55337,
+      "tokens_output": 108431,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/2/results/0"
+    },
+    {
+      "run": "deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 38,
+      "incorrect": 7,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 3702436,
+      "tokens_output": 145245,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/2/results/1"
+    },
+    {
+      "run": "deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 23,
+      "incorrect": 24,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 2,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 2,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 2
+      },
+      "tokens_input": 10765143,
+      "tokens_output": 151795,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/2/results/2"
+    },
+    {
+      "run": "deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "deepseek-v4.1-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "deepseek/deepseek-v4.1-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 36,
+      "incorrect": 11,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3
+      },
+      "tokens_input": 3199701,
+      "tokens_output": 115412,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/2/results/3"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 46,
+      "incorrect": 1,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "QUERY_TIMEOUT": 2,
+        "QUERY_ERROR": 1
+      },
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 2,
+        "QUERY_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "QUERY_ERROR": 1,
+        "QUERY_TIMEOUT": 2
+      },
+      "tokens_input": 69514,
+      "tokens_output": 29572,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/0"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 49,
+      "incorrect": 1,
+      "scored": 50,
+      "scheduled": 50,
+      "unscored": 0,
+      "attempted": 50,
+      "display_status": "All scheduled scored",
+      "question_outcomes": {
+        "COMPLETED": 50
+      },
+      "unscored_causes": {},
+      "attempt_error_tallies": {},
+      "tokens_input": 2076245,
+      "tokens_output": 71777,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/1"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 30,
+      "incorrect": 19,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 49,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1
+      },
+      "tokens_input": 7462100,
+      "tokens_output": 66904,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/2"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 48,
+      "incorrect": 1,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 49,
+        "OUTPUT_INVALID": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 1096087,
+      "tokens_output": 50704,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/3"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-5.6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-5.6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 42,
+      "incorrect": 3,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "attempted": 50,
+      "display_status": "Unscored \u00b7 cause not established",
+      "question_outcomes": {
+        "COMPLETED": 45,
+        "QUERY_ERROR": 5
+      },
+      "unscored_causes": {
+        "QUERY_ERROR": 5
+      },
+      "attempt_error_tallies": {
+        "QUERY_ERROR": 5
+      },
+      "tokens_input": 69514,
+      "tokens_output": 25419,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/4"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-5.6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-5.6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 18,
+      "incorrect": 1,
+      "scored": 19,
+      "scheduled": 50,
+      "unscored": 31,
+      "attempted": 23,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 19,
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 3,
+        "MISSING": 27
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 3,
+        "MISSING": 27
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 27,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 733971,
+      "tokens_output": 33943,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/5"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-5.6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-5.6-luna",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 35,
+      "incorrect": 13,
+      "scored": 48,
+      "scheduled": 50,
+      "unscored": 2,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 48,
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 1
+      },
+      "tokens_input": 7167517,
+      "tokens_output": 45158,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/6"
+    },
+    {
+      "run": "luna-nous-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "gpt-5.6-luna-nous",
+      "provider": "openai-compat",
+      "provider_model": "openai/gpt-5.6-luna",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 44,
+      "incorrect": 3,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 2,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 2,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 2
+      },
+      "tokens_input": 1756268,
+      "tokens_output": 51970,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/3/results/7"
+    },
+    {
+      "run": "glm53flash-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 39,
+      "incorrect": 2,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "OUTPUT_INVALID": 7,
+        "COMPLETED": 41,
+        "QUERY_ERROR": 2
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 2
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 2
+      },
+      "tokens_input": 70427,
+      "tokens_output": 140165,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/4/results/0"
+    },
+    {
+      "run": "glm53flash-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 28,
+      "incorrect": 16,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 6
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 6
+      },
+      "tokens_input": 3560397,
+      "tokens_output": 215239,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/4/results/1"
+    },
+    {
+      "run": "glm53flash-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 16,
+      "incorrect": 26,
+      "scored": 42,
+      "scheduled": 50,
+      "unscored": 8,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 42,
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 6
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 6
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 6
+      },
+      "tokens_input": 12688092,
+      "tokens_output": 265827,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/4/results/2"
+    },
+    {
+      "run": "glm53flash-shared-matrix-seed67-3mcp-20260929",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 31,
+      "incorrect": 16,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 47,
+        "OUTPUT_INVALID": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 3
+      },
+      "tokens_input": 2793762,
+      "tokens_output": 165375,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/4/results/3"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 44,
+      "incorrect": 0,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 2,
+        "QUERY_TIMEOUT": 1,
+        "QUERY_ERROR": 3
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 2,
+        "QUERY_TIMEOUT": 1,
+        "QUERY_ERROR": 3
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 2,
+        "QUERY_ERROR": 3,
+        "QUERY_TIMEOUT": 1
+      },
+      "tokens_input": 70427,
+      "tokens_output": 128485,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/0"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "glm-5.3-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "z-ai/glm-5.3-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 26,
+      "incorrect": 17,
+      "scored": 43,
+      "scheduled": 50,
+      "unscored": 7,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 43,
+        "OUTPUT_INVALID": 7
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 7
+      },
+      "tokens_input": 4658343,
+      "tokens_output": 239209,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/1"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 31,
+      "incorrect": 2,
+      "scored": 33,
+      "scheduled": 50,
+      "unscored": 17,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 33,
+        "OUTPUT_INVALID": 11,
+        "QUERY_ERROR": 6
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 11,
+        "QUERY_ERROR": 6
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 11,
+        "QUERY_ERROR": 6
+      },
+      "tokens_input": 72877,
+      "tokens_output": 204221,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/2"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "qwen3.8-flash-nous",
+      "provider": "openai-compat",
+      "provider_model": "qwen/qwen3.8-flash",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 24,
+      "incorrect": 20,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 6
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 6
+      },
+      "tokens_input": 5954035,
+      "tokens_output": 285032,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/3"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "gpt-6-luna",
+      "provider": "codex",
+      "provider_model": "gpt-6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 3,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/4"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "gpt-6-luna",
+      "provider": "codex",
+      "provider_model": "gpt-6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 3,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/5"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "gpt-5.6-luna",
+      "provider": "codex",
+      "provider_model": "gpt-5.6-luna",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 3,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/6"
+    },
+    {
+      "run": "shared-matrix-seed67-bloodhound-nous-codex-20260928",
+      "report_status": "partial",
+      "model": "gpt-5.6-luna",
+      "provider": "codex",
+      "provider_model": "gpt-5.6-luna",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "attempted": 3,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      },
+      "tokens_input": 0,
+      "tokens_output": 0,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/5/results/7"
+    },
+    {
+      "run": "qwen3.8-json-rerun-2",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "direct",
+      "mcp_name": null,
+      "repetition": 1,
+      "correct": 29,
+      "incorrect": 2,
+      "scored": 31,
+      "scheduled": 50,
+      "unscored": 19,
+      "attempted": 50,
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 31,
+        "OUTPUT_INVALID": 17,
+        "QUERY_ERROR": 2
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 17,
+        "QUERY_ERROR": 2
+      },
+      "attempt_error_tallies": {
+        "OUTPUT_INVALID": 17,
+        "QUERY_ERROR": 2
+      },
+      "tokens_input": 72877,
+      "tokens_output": 240112,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/6/results/0"
+    },
+    {
+      "run": "qwen3.8-json-rerun-2",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "bloodhound_mcp",
+      "repetition": 1,
+      "correct": 34,
+      "incorrect": 10,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "INFRA_ERROR": 2,
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 4
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      },
+      "tokens_input": 4020835,
+      "tokens_output": 237571,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/6/results/1"
+    },
+    {
+      "run": "qwen3.8-json-rerun-2",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "mordavid",
+      "repetition": 1,
+      "correct": 2,
+      "incorrect": 0,
+      "scored": 2,
+      "scheduled": 50,
+      "unscored": 48,
+      "attempted": 5,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 2,
+        "INFRA_ERROR": 3,
+        "MISSING": 45
+      },
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 45
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 3,
+        "MISSING": 45
+      },
+      "tokens_input": 90030,
+      "tokens_output": 3515,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/6/results/2"
+    },
+    {
+      "run": "qwen3.8-json-rerun-2",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "armadin",
+      "repetition": 1,
+      "correct": 20,
+      "incorrect": 16,
+      "scored": 36,
+      "scheduled": 50,
+      "unscored": 14,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "OUTPUT_INVALID": 7,
+        "COMPLETED": 36,
+        "TASK_TIMEOUT": 2,
+        "INFRA_ERROR": 5
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "TASK_TIMEOUT": 2,
+        "INFRA_ERROR": 5
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 5,
+        "OUTPUT_INVALID": 7,
+        "TASK_TIMEOUT": 2
+      },
+      "tokens_input": 8864982,
+      "tokens_output": 259090,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/6/results/3"
+    },
+    {
+      "run": "qwen3.8-json-rerun-2",
+      "report_status": "partial",
+      "model": "qwen3.8-27b-q4km",
+      "provider": "openai-compat",
+      "provider_model": "qwen3.8-27b-q4km-262k",
+      "track": "mcp",
+      "mcp_name": "steven_external",
+      "repetition": 1,
+      "correct": 35,
+      "incorrect": 9,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "attempted": 50,
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "question_outcomes": {
+        "COMPLETED": 44,
+        "OUTPUT_INVALID": 5,
+        "INFRA_ERROR": 1
+      },
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5,
+        "INFRA_ERROR": 1
+      },
+      "attempt_error_tallies": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 5
+      },
+      "tokens_input": 3426500,
+      "tokens_output": 180065,
+      "cache_tokens": null,
+      "recorded_cost_usd": null,
+      "cost_usd": null,
+      "source_ref": "analysis.json#/analyses/6/results/4"
+    }
+  ],
+  "question_row_score_mismatches": []
+}

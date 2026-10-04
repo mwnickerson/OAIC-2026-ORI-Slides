@@ -2,41 +2,23 @@
 
 Model: `glm-5.3-flash-nous`; MCP pairing: `none`.
 
-Source integrity: structural checks of ORI public report projection only; no cryptographic attestation.
-Benchmark completion: reported complete (not independently revalidated).
-Analysis coverage: public aggregate report and question-level summaries only; private evidence was not opened.
+Source integrity: structural validation of public ORI report projections; not cryptographic attestation.
+Benchmark completion: parent report root status is listed per source in `question-scoring-ledger.json`; individual rows below use scoring coverage/cause labels.
+Analysis coverage: public aggregate and public question-result rows only. Private attempts were not opened.
 Publication status: not published.
-Diagnostic artifact unless all source validations and comparison gates pass.
-Direct and MCP tracks are not combined. MCP differences are not causal evidence.
-Scores below are ORI-reported facts; incomplete slots remain in scheduled denominators.
 
-## Results
+Direct and MCP results remain separate. Repetitions remain separate observations; no pooled score or causal MCP claim is made.
 
-| Track | Correct / scheduled | Attempted | Graded | Attempts | Status |
-|---|---:|---:|---:|---:|---|
-| direct | 38/50 | 50 | 41 | 50 | completed |
-| direct | 39/50 | 50 | 43 | 50 | completed |
-| direct | 36/50 | 50 | 37 | 50 | completed |
-| direct | 39/50 | 50 | 41 | 50 | completed |
-| direct | 44/50 | 50 | 44 | 50 | completed |
+Provider(s): `openai-compat`. Provider model ID(s): `z-ai/glm-5.3-flash`.
+Counts: right + wrong = scored; unscored = scheduled − scored. Public question outcomes explain unscored rows where available. Attempt/error tallies are shown separately because retries/events need not equal unique questions.
 
-## Methods and limitations
+| Run | Rep | Right | Wrong | Scored | Scheduled | Unscored | Unscored outcome causes | Attempt/error tallies | Input tokens | Output tokens | Cache tokens | Recorded cost | Estimate | Presentation status | Source |
+|---|---:|---:|---:|---:|---:|---:|---|---|---:|---:|---|---:|---:|---|---|
+| glm53flash-shared-matrix-seed67-3mcp-20260929 | 1 | 39 | 2 | 41 | 50 | 9 | OUTPUT_INVALID=7, QUERY_ERROR=2 | OUTPUT_INVALID=7, QUERY_ERROR=2 | 70,427 | 140,165 | not recorded | not recorded | not computed | Output-validation issue · unscored | `analysis.json#/analyses/4/results/0` |
+| seed67-step1-six-models-3rep-3mcp-20260930 | 1 | 38 | 3 | 41 | 50 | 9 | OUTPUT_INVALID=5, QUERY_ERROR=4 | OUTPUT_INVALID=5, QUERY_ERROR=4 | 70,427 | 155,420 | not recorded | not recorded | not computed | Output-validation issue · unscored | `analysis.json#/analyses/1/results/12` |
+| seed67-step1-six-models-3rep-3mcp-20260930 | 2 | 39 | 4 | 43 | 50 | 7 | OUTPUT_INVALID=5, QUERY_ERROR=2 | OUTPUT_INVALID=5, QUERY_ERROR=2 | 70,427 | 126,222 | not recorded | not recorded | not computed | Output-validation issue · unscored | `analysis.json#/analyses/1/results/13` |
+| seed67-step1-six-models-3rep-3mcp-20260930 | 3 | 36 | 1 | 37 | 50 | 13 | OUTPUT_INVALID=9, QUERY_ERROR=4 | OUTPUT_INVALID=9, QUERY_ERROR=4 | 68,115 | 126,720 | not recorded | not recorded | not computed | Output-validation issue · unscored | `analysis.json#/analyses/1/results/14` |
+| shared-matrix-seed67-bloodhound-nous-codex-20260928 | 1 | 44 | 0 | 44 | 50 | 6 | OUTPUT_INVALID=2, QUERY_ERROR=3, QUERY_TIMEOUT=1 | OUTPUT_INVALID=2, QUERY_ERROR=3, QUERY_TIMEOUT=1 | 70,427 | 128,485 | not recorded | not recorded | not computed | Timeout-affected · unscored | `analysis.json#/analyses/5/results/0` |
 
-Source is ORI's public aggregate report. Task records and attempt transcripts were not read. Source integrity is structural only; lifecycle/evidence verification is bounded to the public projection. See analysis.json for row-cited findings.
-
-
-## Usage, cost, and operational notes
-
-Provider(s): `openai-compat`. Exact provider-model ID(s): `z-ai/glm-5.3-flash`.
-Input/output values are provider-reported aggregate counters. Cache-token categories and API charges are not in the public projections. “Not recorded” is not zero spend; no rate estimate is made without dated exact-model rates and cache/input/output breakdown.
-
-| Run/cohort | Rep | State | Correct/scheduled | Attempted/scheduled | Input tokens | Output tokens | Cache tokens | Recorded cost | Estimate | Failure tallies |
-|---|---:|---|---:|---:|---:|---:|---|---:|---:|---|
-| seed67-step1-six-models-3rep-3mcp-20260930 | 1 | completed | 38/50 | 50/50 | 70,427 | 155,420 | not recorded | not recorded | not computed | OUTPUT_INVALID=5, QUERY_ERROR=4 |
-| seed67-step1-six-models-3rep-3mcp-20260930 | 2 | completed | 39/50 | 50/50 | 70,427 | 126,222 | not recorded | not recorded | not computed | OUTPUT_INVALID=5, QUERY_ERROR=2 |
-| seed67-step1-six-models-3rep-3mcp-20260930 | 3 | completed | 36/50 | 50/50 | 68,115 | 126,720 | not recorded | not recorded | not computed | OUTPUT_INVALID=9, QUERY_ERROR=4 |
-| glm53flash-shared-matrix-seed67-3mcp-20260929 | 1 | completed | 39/50 | 50/50 | 70,427 | 140,165 | not recorded | not recorded | not computed | OUTPUT_INVALID=7, QUERY_ERROR=2 |
-| shared-matrix-seed67-bloodhound-nous-codex-20260928 | 1 | completed | 44/50 | 50/50 | 70,427 | 128,485 | not recorded | not recorded | not computed | OUTPUT_INVALID=2, QUERY_ERROR=3, QUERY_TIMEOUT=1 |
-
-Keep failed, missing, interrupted and in-flight slots in the scheduled denominator. Tallies are public aggregates and may include retries/events, not necessarily unique tasks. A completed row can still contain output-format or query errors.
-Source pointers: `analysis.json#/analyses/1/results/12`, `analysis.json#/analyses/1/results/13`, `analysis.json#/analyses/1/results/14`, `analysis.json#/analyses/4/results/0`, `analysis.json#/analyses/5/results/0`.
+API cost and cache status: token input/output counters are shown above; `cost_usd` and `recorded_cost_usd` are null across the selected public rows, cache-token categories and dated Nous Portal rate data are absent. Cost is unavailable, not zero; no estimate is invented.
+Infrastructure interpretation: provider/infra, timeout, output-validation, missing, interruption, and teardown labels describe public outcome evidence; they are not labels of reasoning capability. See the executive report for the operator-supplied Qwen Flash/Armadin incident note.

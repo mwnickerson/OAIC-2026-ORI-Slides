@@ -1,1 +1,1669 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width'><title>ORI All Recent Runs</title><style>body{margin:0;background:#f2f4ef;color:#20312d;font:15px/1.55 system-ui}main{max-width:1250px;margin:auto;padding:24px}h1,h2{color:#16745d}.panel{background:#fffefa;padding:18px;border:1px solid #ccd8d0;border-radius:14px;margin:16px 0}.incident{border-left:5px solid #b54824;padding-left:14px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:10px}th,td{text-align:left;padding:4px;border-bottom:1px solid #dce3dd;vertical-align:top}th{background:#e9eee8;position:sticky;top:0}.small{color:#51645c}@media print{@page{size:A4 landscape;margin:.45in}thead{display:table-header-group}tr{break-inside:avoid}body{background:white}main{max-width:none}.panel{break-inside:avoid}.table-wrap{overflow:visible}th{position:static}}</style></head><body><main><h1>ORI · All Recent Report-Ready Runs</h1><p>7 report roots · 114 aggregate rows · 5,700 scheduled · 3,635 attempted · 10 model labels</p><section class='panel'><h2>Interpretation guardrails</h2><p>Direct and MCP remain separate. Repetitions are not pooled. All cross-root pairs failed ORI compatibility checks, so no cross-run leaderboard is shown. Failures/timeouts/invalid outputs stay inside scheduled denominators.</p><p class='incident'>Operator-supplied Qwen3.8 Flash/Armadin note: 34 HTTP 400 responses; 26 associated with final INFRA_ERROR tasks, 8 in later-completed records. Position 9 followed a 3,710,830-character tool result (estimated 4.49 MB request). Smaller failures and larger successes mean no single size threshold is established; response body was not saved, so exact cause remains unknown. These are infrastructure/protocol outcomes, not reasoning errors. Steven External cleanup is separate teardown.</p><p>API cost: provider input/output counters are present, but no recorded costs, cache-token split, or dated Nous Portal rates. Cost is unavailable, not zero.</p></section><section class='panel'><h2>Selected roots</h2><table><thead><tr><th>Root</th><th>Status</th><th>Rows</th><th>Scheduled</th><th>Attempted</th></tr></thead><tbody><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>partial</td><td>13</td><td>650</td><td>601</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>partial</td><td>72</td><td>3600</td><td>1844</td></tr><tr><td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td><td>partial</td><td>4</td><td>200</td><td>200</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>partial</td><td>8</td><td>400</td><td>373</td></tr><tr><td>glm53flash-shared-matrix-seed67-3mcp-20260929</td><td>partial</td><td>4</td><td>200</td><td>200</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>partial</td><td>8</td><td>400</td><td>212</td></tr><tr><td>qwen3.8-json-rerun-2</td><td>partial</td><td>5</td><td>250</td><td>205</td></tr></tbody></table></section><section class='panel'><h2>Public result rows</h2><div class='table-wrap'><table><thead><tr><th>Report root</th><th>Model</th><th>Rep</th><th>Track</th><th>MCP</th><th>Correct/scheduled</th><th>Attempted/scheduled</th><th>State</th><th>Failure tallies</th></tr></thead><tbody><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>31/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=13, QUERY_ERROR=3</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>2</td><td>direct</td><td>Direct</td><td>35/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=12, QUERY_ERROR=1</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>3</td><td>direct</td><td>Direct</td><td>30/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=12, QUERY_ERROR=4</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>28/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=5</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>26/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=6</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>28/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=5</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>12/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=6, OUTPUT_INVALID=6</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>2</td><td>mcp</td><td>armadin</td><td>14/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=9, OUTPUT_INVALID=4</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>3</td><td>mcp</td><td>armadin</td><td>0/50</td><td>1/50</td><td>failed</td><td>INFRA_ERROR=1, MISSING=49</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>21/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=5</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>2</td><td>mcp</td><td>steven_external</td><td>26/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=5</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>qwen3.8-flash-nous</td><td>3</td><td>mcp</td><td>steven_external</td><td>23/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=6</td></tr><tr><td>seed67-qwen38flash-gpt6luna-recovery-20261002</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>49/50</td><td>50/50</td><td>failed</td><td>none recorded</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>1</td><td>direct</td><td>Direct</td><td>40/50</td><td>50/50</td><td>completed</td><td>QUERY_ERROR=3, QUERY_TIMEOUT=6</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>2</td><td>direct</td><td>Direct</td><td>43/50</td><td>50/50</td><td>completed</td><td>QUERY_ERROR=4, QUERY_TIMEOUT=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>3</td><td>direct</td><td>Direct</td><td>45/50</td><td>50/50</td><td>completed</td><td>QUERY_ERROR=3, QUERY_TIMEOUT=2</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>47/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>49/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>49/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>32/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>2</td><td>mcp</td><td>armadin</td><td>32/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>3</td><td>mcp</td><td>armadin</td><td>31/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>50/50</td><td>50/50</td><td>failed</td><td>none recorded</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>2</td><td>mcp</td><td>steven_external</td><td>48/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gpt-6-luna-nous</td><td>3</td><td>mcp</td><td>steven_external</td><td>19/50</td><td>23/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=27, OUTPUT_INVALID=1</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>38/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=5, QUERY_ERROR=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>2</td><td>direct</td><td>Direct</td><td>39/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=5, QUERY_ERROR=2</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>3</td><td>direct</td><td>Direct</td><td>36/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=9, QUERY_ERROR=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>23/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=10</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>26/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=12</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>24/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=13</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>15/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=9</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>2</td><td>mcp</td><td>armadin</td><td>19/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=7</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>3</td><td>mcp</td><td>armadin</td><td>17/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=3, OUTPUT_INVALID=10</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>27/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>2</td><td>mcp</td><td>steven_external</td><td>30/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>glm-5.3-flash-nous</td><td>3</td><td>mcp</td><td>steven_external</td><td>30/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=7</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>32/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=3, QUERY_ERROR=5, TASK_TIMEOUT=5</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>2</td><td>direct</td><td>Direct</td><td>35/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=7, QUERY_ERROR=5</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>3</td><td>direct</td><td>Direct</td><td>32/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=10, QUERY_ERROR=5</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>28/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>27/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=3</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>27/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>25/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=2</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>2</td><td>mcp</td><td>armadin</td><td>26/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=4</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>3</td><td>mcp</td><td>armadin</td><td>22/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=2</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>35/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=3</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>2</td><td>mcp</td><td>steven_external</td><td>35/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=3</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>deepseek-v4.1-flash-nous</td><td>3</td><td>mcp</td><td>steven_external</td><td>34/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=3</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>1</td><td>direct</td><td>Direct</td><td>6/50</td><td>50/50</td><td>interrupted</td><td>TASK_TIMEOUT=44</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>2</td><td>direct</td><td>Direct</td><td>6/50</td><td>21/50</td><td>interrupted</td><td>INTERRUPTED=1, MISSING=29, TASK_TIMEOUT=13</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>3</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>interrupted</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>2</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>3</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>2</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>qwen3.8-27b-q4km</td><td>3</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>1</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>2</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>3</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>1</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>2</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>3</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>1</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>2</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>muse-glimmer-30b</td><td>3</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>1</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>2</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>3</td><td>direct</td><td>Direct</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>2</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>3</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>1</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>2</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>3</td><td>mcp</td><td>armadin</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>1</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>2</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>seed67-step1-six-models-3rep-3mcp-20260930</td><td>gemma-4-26b-it-qat-q4-0-64k</td><td>3</td><td>mcp</td><td>steven_external</td><td>0/50</td><td>0/50</td><td>unknown</td><td>MISSING=50</td></tr><tr><td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>29/50</td><td>50/50</td><td>completed</td><td>QUERY_ERROR=4, QUERY_TIMEOUT=1, TASK_TIMEOUT=12</td></tr><tr><td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>38/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=4</td></tr><tr><td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>23/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=2</td></tr><tr><td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td><td>deepseek-v4.1-flash-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>36/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=3</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-6-luna-nous</td><td>1</td><td>direct</td><td>Direct</td><td>46/50</td><td>50/50</td><td>completed</td><td>QUERY_ERROR=1, QUERY_TIMEOUT=2</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>49/50</td><td>50/50</td><td>completed</td><td>none recorded</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>30/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-6-luna-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>48/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=1</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-5.6-luna-nous</td><td>1</td><td>direct</td><td>Direct</td><td>42/50</td><td>50/50</td><td>completed</td><td>QUERY_ERROR=5</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-5.6-luna-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>18/50</td><td>23/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=27, OUTPUT_INVALID=1</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-5.6-luna-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>35/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=1</td></tr><tr><td>luna-nous-shared-matrix-seed67-3mcp-20260929</td><td>gpt-5.6-luna-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>44/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=2</td></tr><tr><td>glm53flash-shared-matrix-seed67-3mcp-20260929</td><td>glm-5.3-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>39/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=7, QUERY_ERROR=2</td></tr><tr><td>glm53flash-shared-matrix-seed67-3mcp-20260929</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>28/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=6</td></tr><tr><td>glm53flash-shared-matrix-seed67-3mcp-20260929</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>armadin</td><td>16/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=6</td></tr><tr><td>glm53flash-shared-matrix-seed67-3mcp-20260929</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>steven_external</td><td>31/50</td><td>50/50</td><td>failed</td><td>OUTPUT_INVALID=3</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>glm-5.3-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>44/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=2, QUERY_ERROR=3, QUERY_TIMEOUT=1</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>glm-5.3-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>26/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=7</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>qwen3.8-flash-nous</td><td>1</td><td>direct</td><td>Direct</td><td>31/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=11, QUERY_ERROR=6</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>qwen3.8-flash-nous</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>24/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=6</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>gpt-6-luna</td><td>1</td><td>direct</td><td>Direct</td><td>0/50</td><td>3/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=47</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>gpt-6-luna</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>3/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=47</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>gpt-5.6-luna</td><td>1</td><td>direct</td><td>Direct</td><td>0/50</td><td>3/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=47</td></tr><tr><td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td><td>gpt-5.6-luna</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>0/50</td><td>3/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=47</td></tr><tr><td>qwen3.8-json-rerun-2</td><td>qwen3.8-27b-q4km</td><td>1</td><td>direct</td><td>Direct</td><td>29/50</td><td>50/50</td><td>completed</td><td>OUTPUT_INVALID=17, QUERY_ERROR=2</td></tr><tr><td>qwen3.8-json-rerun-2</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>bloodhound_mcp</td><td>34/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=2, OUTPUT_INVALID=4</td></tr><tr><td>qwen3.8-json-rerun-2</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>mordavid</td><td>2/50</td><td>5/50</td><td>failed</td><td>INFRA_ERROR=3, MISSING=45</td></tr><tr><td>qwen3.8-json-rerun-2</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>armadin</td><td>20/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=5, OUTPUT_INVALID=7, TASK_TIMEOUT=2</td></tr><tr><td>qwen3.8-json-rerun-2</td><td>qwen3.8-27b-q4km</td><td>1</td><td>mcp</td><td>steven_external</td><td>35/50</td><td>50/50</td><td>failed</td><td>INFRA_ERROR=1, OUTPUT_INVALID=5</td></tr></tbody></table></div></section><p class='small'>Public ORI report projections only; operator-supplied task-attempt context is attributed and not independently reopened. See recent-runs-executive-summary.md for source boundary and API cost caveats.</p></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>ORI · All Recent Runs: Question Scoring &amp; Cause Report</title><style>body{margin:2rem;color:#20312d;background:#fff;font:16px/1.5 system-ui,sans-serif}h1,h2{color:#14655c}table{border-collapse:collapse;width:100%;font-size:12px}td,th{padding:6px;border:1px solid #c7d4ce;vertical-align:top;overflow-wrap:anywhere}th{background:#e2eeeb}a{color:#14655c}table{display:block;overflow-x:auto}@media print{@page{size:A3 landscape;margin:12mm}body{margin:0}table{display:table}thead{display:table-header-group}tr{break-inside:avoid}}</style></head><body><main><h1 id="ori-all-recent-runs-question-scoring-cause-report">ORI · All Recent Runs: Question Scoring &amp; Cause Report</h1>
+<p>This update replaces “failed” as a model-facing label with scored coverage and reason-specific outcome notes. Raw ORI status remains available in the machine-readable <code>analysis.json</code>.</p>
+<p>Scope: seven recent report-ready roots (Sept 28–Oct 3); 114 aggregate model/track/repetition rows; 5700 scheduled slots; 3635 attempted. This sum is a workload/coverage inventory across repetitions, not an accuracy denominator.</p>
+<h2 id="what-the-counts-mean">What the counts mean</h2>
+<ul>
+<li><strong>Right</strong> = ORI-scored correct questions. <strong>Wrong</strong> = ORI-scored incorrect questions. <strong>Scored</strong> = right + wrong (ORI <code>graded</code>).</li>
+<li><strong>Unscored</strong> = scheduled − scored. The cause column uses public question-result outcome codes where available; if it says “cause not established”, the public aggregates don’t attribute those questions more specifically.</li>
+<li>Attempt/error tallies are listed separately because they may count retries/events and can exceed distinct unscored questions.</li>
+<li>Direct and MCP stay separate. The 21 cross-root comparison gates did not pass; no cross-run leaderboard or causal claim is made.</li>
+</ul>
+<h2 id="row-level-ledger">Row-level ledger</h2>
+<table>
+<thead>
+<tr>
+<th>Run</th>
+<th>Model</th>
+<th style="text-align: right;">Rep</th>
+<th>Track</th>
+<th>MCP</th>
+<th style="text-align: right;">Right</th>
+<th style="text-align: right;">Wrong</th>
+<th style="text-align: right;">Scored</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Unscored</th>
+<th>Cause of unscored</th>
+<th>Presentation status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">16</td>
+<td>OUTPUT_INVALID=13, QUERY_ERROR=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">13</td>
+<td>OUTPUT_INVALID=12, QUERY_ERROR=1</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">16</td>
+<td>OUTPUT_INVALID=12, QUERY_ERROR=4</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>OUTPUT_INVALID=5</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>OUTPUT_INVALID=6</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>OUTPUT_INVALID=5</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">12</td>
+<td>INFRA_ERROR=6, OUTPUT_INVALID=6</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">13</td>
+<td>INFRA_ERROR=9, OUTPUT_INVALID=4</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>INFRA_ERROR=1, MISSING=49</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>OUTPUT_INVALID=5</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>OUTPUT_INVALID=5</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>OUTPUT_INVALID=6</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-qwen38flash-gpt6luna-recovery-20261002</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td>none reported</td>
+<td>Scores recorded · teardown note</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">9</td>
+<td>QUERY_ERROR=3, QUERY_TIMEOUT=6</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>QUERY_ERROR=4, QUERY_TIMEOUT=1</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>QUERY_ERROR=3, QUERY_TIMEOUT=2</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td>INFRA_ERROR=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td>OUTPUT_INVALID=1</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td>OUTPUT_INVALID=1</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">2</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td>none reported</td>
+<td>Scores recorded · teardown note</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">2</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">31</td>
+<td>INFRA_ERROR=3, MISSING=27, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">9</td>
+<td>OUTPUT_INVALID=5, QUERY_ERROR=4</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">7</td>
+<td>OUTPUT_INVALID=5, QUERY_ERROR=2</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">13</td>
+<td>OUTPUT_INVALID=9, QUERY_ERROR=4</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">10</td>
+<td>OUTPUT_INVALID=10</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">12</td>
+<td>OUTPUT_INVALID=12</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">13</td>
+<td>OUTPUT_INVALID=13</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">11</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=9</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">9</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=7</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">13</td>
+<td>INFRA_ERROR=3, OUTPUT_INVALID=10</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=4</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=4</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">7</td>
+<td>OUTPUT_INVALID=7</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">13</td>
+<td>OUTPUT_INVALID=3, QUERY_ERROR=5, TASK_TIMEOUT=5</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">12</td>
+<td>OUTPUT_INVALID=7, QUERY_ERROR=5</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">15</td>
+<td>OUTPUT_INVALID=10, QUERY_ERROR=5</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">4</td>
+<td>OUTPUT_INVALID=4</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>OUTPUT_INVALID=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">4</td>
+<td>OUTPUT_INVALID=4</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=2</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=4</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">4</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=2</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>OUTPUT_INVALID=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>OUTPUT_INVALID=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>OUTPUT_INVALID=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">44</td>
+<td>TASK_TIMEOUT=44</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">43</td>
+<td>INTERRUPTED=1, MISSING=29, TASK_TIMEOUT=13</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>muse-glimmer-30b</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">2</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">3</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">2</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>seed67-step1-six-models-3rep-3mcp-20260930</td>
+<td>gemma-4-26b-it-qat-q4-0-64k</td>
+<td style="text-align: right;">3</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>MISSING=50</td>
+<td>Missing/interrupted · unscored</td>
+</tr>
+<tr>
+<td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">17</td>
+<td>QUERY_ERROR=4, QUERY_TIMEOUT=1, TASK_TIMEOUT=12</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=4</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=2</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>deepseek-v4.1-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>OUTPUT_INVALID=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>QUERY_ERROR=1, QUERY_TIMEOUT=2</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">0</td>
+<td>none reported</td>
+<td>All scheduled scored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td>INFRA_ERROR=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1</td>
+<td>OUTPUT_INVALID=1</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-5.6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">45</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">5</td>
+<td>QUERY_ERROR=5</td>
+<td>Unscored · cause not established</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-5.6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">31</td>
+<td>INFRA_ERROR=3, MISSING=27, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-5.6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">2</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=1</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>luna-nous-shared-matrix-seed67-3mcp-20260929</td>
+<td>gpt-5.6-luna-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=2</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>glm53flash-shared-matrix-seed67-3mcp-20260929</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">9</td>
+<td>OUTPUT_INVALID=7, QUERY_ERROR=2</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>glm53flash-shared-matrix-seed67-3mcp-20260929</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>OUTPUT_INVALID=6</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>glm53flash-shared-matrix-seed67-3mcp-20260929</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">8</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=6</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>glm53flash-shared-matrix-seed67-3mcp-20260929</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">3</td>
+<td>OUTPUT_INVALID=3</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>OUTPUT_INVALID=2, QUERY_ERROR=3, QUERY_TIMEOUT=1</td>
+<td>Timeout-affected · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>glm-5.3-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">7</td>
+<td>OUTPUT_INVALID=7</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">17</td>
+<td>OUTPUT_INVALID=11, QUERY_ERROR=6</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>qwen3.8-flash-nous</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>OUTPUT_INVALID=6</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>gpt-6-luna</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>INFRA_ERROR=3, MISSING=47</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>gpt-6-luna</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>INFRA_ERROR=3, MISSING=47</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>gpt-5.6-luna</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>INFRA_ERROR=3, MISSING=47</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>shared-matrix-seed67-bloodhound-nous-codex-20260928</td>
+<td>gpt-5.6-luna</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">50</td>
+<td>INFRA_ERROR=3, MISSING=47</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>qwen3.8-json-rerun-2</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>direct</td>
+<td>Direct</td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">19</td>
+<td>OUTPUT_INVALID=17, QUERY_ERROR=2</td>
+<td>Output-validation issue · unscored</td>
+</tr>
+<tr>
+<td>qwen3.8-json-rerun-2</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>bloodhound_mcp</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>INFRA_ERROR=2, OUTPUT_INVALID=4</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>qwen3.8-json-rerun-2</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>mordavid</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">48</td>
+<td>INFRA_ERROR=3, MISSING=45</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>qwen3.8-json-rerun-2</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>armadin</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">14</td>
+<td>INFRA_ERROR=5, OUTPUT_INVALID=7, TASK_TIMEOUT=2</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+<tr>
+<td>qwen3.8-json-rerun-2</td>
+<td>qwen3.8-27b-q4km</td>
+<td style="text-align: right;">1</td>
+<td>mcp</td>
+<td>steven_external</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">6</td>
+<td>INFRA_ERROR=1, OUTPUT_INVALID=5</td>
+<td>Provider/infra issue · unscored</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reason-specific-label-counts">Reason-specific label counts</h2>
+<ul>
+<li>All scheduled scored: 1 result slots</li>
+<li>Missing/interrupted · unscored: 34 result slots</li>
+<li>Output-validation issue · unscored: 35 result slots</li>
+<li>Provider/infra issue · unscored: 32 result slots</li>
+<li>Scores recorded · teardown note: 2 result slots</li>
+<li>Timeout-affected · unscored: 9 result slots</li>
+<li>Unscored · cause not established: 1 result slots</li>
+</ul>
+<h2 id="qwen38-flash-armadin-provider-incident">Qwen3.8 Flash / Armadin provider incident</h2>
+<p>Operator-supplied evidence: 34 HTTP 400 responses followed successful MCP tool-call turns, 26 associated with final INFRA_ERROR tasks and 8 in records that later completed. Repetition 3 had 49 scheduled questions without a result. A repeated position-9 request followed an analyze_group_permissions response of 3,710,830 characters; a reconstructed messages-plus-tool-schemas core was estimated at 4.49 MB (not a complete HTTP payload). Because smaller requests also failed and larger ones succeeded, size is only a possible contributor. The response body was not saved; the exact rejection reason is unknown. Operator reports the harness used a broad PROVIDER_PROTOCOL label. Treat these as provider/protocol outcomes, not reasoning errors. Steven External cleanup errors are separate teardown issues.</p>
+<p>The Qwen Flash/Armadin card has a specific note. Other infrastructure cases are labeled from their own public INFRA_ERROR/timeout outcome counts; no exact trigger is assigned without evidence.</p>
+<h2 id="api-usage-cost">API usage / cost</h2>
+<p>Input/output usage is present for 114/114 rows. Recorded cost is present for 0/114; cache-token fields are absent. The reports and cards mark costs unavailable/not computed rather than zero.</p>
+<h2 id="output-files">Output files</h2>
+<ul>
+<li><code>analysis.md</code> / <code>analysis.html</code> / <code>analysis.pdf</code> — human-facing scored/unscored ledger and reason-specific labels.</li>
+<li><code>analysis.json</code> — raw public analyzer status values retained for audit.</li>
+<li><code>question-scoring-ledger.json</code> — exact per-row right/wrong/scored/unscored counts and public cause tallies.</li>
+<li><code>model-cards/*.md</code>, <code>*.svg</code>, and <code>*.png</code> — per-model/MCP cards with question scoring and bottom notes.</li>
+<li><code>recent-runs-executive-summary.*</code> — concise overview and all row outcomes.</li>
+<li>This public subtree contains the reviewed loose files; no duplicate ZIP is included.</li>
+</ul>
+<h2 id="public-source-links">Public source links</h2>
+<ul>
+<li><a href="analysis.json">Raw aggregate analysis</a> — historical ORI lifecycle status is retained.</li>
+<li><a href="question-scoring-ledger.json">Question scoring ledger</a> — final public outcome counts, distinct from retry/error tallies.</li>
+<li><a href="presentation-status-ledger.json">Presentation status ledger</a> — coverage/cause labels.</li>
+<li><a href="model-cards/">Model cards</a> — full per-repetition Markdown tables and compact SVG/PNG previews.</li>
+</ul>
+<p>The SVG/PNG cards are compact previews of up to four rows; some cause lists are shortened. Use the Markdown cards or JSON ledgers for complete rows, causes, run identities, and repetitions.</p>
+<p>Original public run reports (retained unchanged):</p>
+<ul>
+<li><a href="../runs/seed67-qwen38flash-gpt6luna-recovery-20261002/report.json">seed67-qwen38flash-gpt6luna-recovery-20261002</a></li>
+<li><a href="../runs/seed67-step1-six-models-3rep-3mcp-20260930/report.json">seed67-step1-six-models-3rep-3mcp-20260930</a></li>
+<li><a href="../runs/deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929/report.json">deepseek-v41-flash-nous-shared-matrix-seed67-3mcp-20260929</a></li>
+<li><a href="../runs/luna-nous-shared-matrix-seed67-3mcp-20260929/report.json">luna-nous-shared-matrix-seed67-3mcp-20260929</a></li>
+<li><a href="../runs/glm53flash-shared-matrix-seed67-3mcp-20260929/report.json">glm53flash-shared-matrix-seed67-3mcp-20260929</a></li>
+<li><a href="../runs/shared-matrix-seed67-bloodhound-nous-codex-20260928/report.json">shared-matrix-seed67-bloodhound-nous-codex-20260928</a></li>
+<li><a href="../runs/qwen3.8-json-rerun-2/report.json">qwen3.8-json-rerun-2</a></li>
+</ul></main></body></html>

@@ -1,0 +1,1423 @@
+{
+  "note": "Raw ORI state remains in analysis.json. Presentation labels are derived from scored/unscored coverage and public outcome causes.",
+  "rows": [
+    {
+      "source_ref": "analysis.json#/analyses/0/results/0",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 31,
+      "incorrect": 3,
+      "scored": 34,
+      "scheduled": 50,
+      "unscored": 16,
+      "unscored_causes": {
+        "QUERY_ERROR": 3,
+        "OUTPUT_INVALID": 13
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/1",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 35,
+      "incorrect": 2,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 12,
+        "QUERY_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/2",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 30,
+      "incorrect": 4,
+      "scored": 34,
+      "scheduled": 50,
+      "unscored": 16,
+      "unscored_causes": {
+        "QUERY_ERROR": 4,
+        "OUTPUT_INVALID": 12
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/3",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 28,
+      "incorrect": 17,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/4",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 26,
+      "incorrect": 18,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/5",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 28,
+      "incorrect": 17,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/6",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 12,
+      "incorrect": 26,
+      "scored": 38,
+      "scheduled": 50,
+      "unscored": 12,
+      "unscored_causes": {
+        "INFRA_ERROR": 6,
+        "OUTPUT_INVALID": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/7",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 14,
+      "incorrect": 23,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "unscored_causes": {
+        "INFRA_ERROR": 9,
+        "OUTPUT_INVALID": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/8",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "INFRA_ERROR": 1,
+        "MISSING": 49
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/9",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 21,
+      "incorrect": 24,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/10",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 26,
+      "incorrect": 19,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/11",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 23,
+      "incorrect": 21,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/0/results/12",
+      "display_status": "Scores recorded \u00b7 teardown note",
+      "correct": 49,
+      "incorrect": 1,
+      "scored": 50,
+      "scheduled": 50,
+      "unscored": 0,
+      "unscored_causes": {}
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/0",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 40,
+      "incorrect": 1,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 6,
+        "QUERY_ERROR": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/1",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 43,
+      "incorrect": 2,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 1,
+        "QUERY_ERROR": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/2",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 45,
+      "incorrect": 0,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 2,
+        "QUERY_ERROR": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/3",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 47,
+      "incorrect": 2,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "unscored_causes": {
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/4",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 49,
+      "incorrect": 0,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/5",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 49,
+      "incorrect": 0,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/6",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 32,
+      "incorrect": 16,
+      "scored": 48,
+      "scheduled": 50,
+      "unscored": 2,
+      "unscored_causes": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/7",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 32,
+      "incorrect": 15,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/8",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 31,
+      "incorrect": 16,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/9",
+      "display_status": "Scores recorded \u00b7 teardown note",
+      "correct": 50,
+      "incorrect": 0,
+      "scored": 50,
+      "scheduled": 50,
+      "unscored": 0,
+      "unscored_causes": {}
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/10",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 48,
+      "incorrect": 0,
+      "scored": 48,
+      "scheduled": 50,
+      "unscored": 2,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/11",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 19,
+      "incorrect": 0,
+      "scored": 19,
+      "scheduled": 50,
+      "unscored": 31,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 3,
+        "MISSING": 27
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/12",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 38,
+      "incorrect": 3,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/13",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 39,
+      "incorrect": 4,
+      "scored": 43,
+      "scheduled": 50,
+      "unscored": 7,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5,
+        "QUERY_ERROR": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/14",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 36,
+      "incorrect": 1,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 9,
+        "QUERY_ERROR": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/15",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 23,
+      "incorrect": 17,
+      "scored": 40,
+      "scheduled": 50,
+      "unscored": 10,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 10
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/16",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 26,
+      "incorrect": 12,
+      "scored": 38,
+      "scheduled": 50,
+      "unscored": 12,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 12
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/17",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 24,
+      "incorrect": 13,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 13
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/18",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 15,
+      "incorrect": 24,
+      "scored": 39,
+      "scheduled": 50,
+      "unscored": 11,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 9,
+        "INFRA_ERROR": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/19",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 19,
+      "incorrect": 22,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "INFRA_ERROR": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/20",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 17,
+      "incorrect": 20,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 10,
+        "INFRA_ERROR": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/21",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 27,
+      "incorrect": 18,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/22",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 30,
+      "incorrect": 15,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/23",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 30,
+      "incorrect": 13,
+      "scored": 43,
+      "scheduled": 50,
+      "unscored": 7,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/24",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 32,
+      "incorrect": 5,
+      "scored": 37,
+      "scheduled": 50,
+      "unscored": 13,
+      "unscored_causes": {
+        "TASK_TIMEOUT": 5,
+        "OUTPUT_INVALID": 3,
+        "QUERY_ERROR": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/25",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 35,
+      "incorrect": 3,
+      "scored": 38,
+      "scheduled": 50,
+      "unscored": 12,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/26",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 32,
+      "incorrect": 3,
+      "scored": 35,
+      "scheduled": 50,
+      "unscored": 15,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 10,
+        "QUERY_ERROR": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/27",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 28,
+      "incorrect": 18,
+      "scored": 46,
+      "scheduled": 50,
+      "unscored": 4,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/28",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 27,
+      "incorrect": 20,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/29",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 27,
+      "incorrect": 19,
+      "scored": 46,
+      "scheduled": 50,
+      "unscored": 4,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/30",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 25,
+      "incorrect": 22,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "INFRA_ERROR": 1,
+        "OUTPUT_INVALID": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/31",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 26,
+      "incorrect": 18,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/32",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 22,
+      "incorrect": 24,
+      "scored": 46,
+      "scheduled": 50,
+      "unscored": 4,
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/33",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 35,
+      "incorrect": 12,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/34",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 35,
+      "incorrect": 12,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/35",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 34,
+      "incorrect": 13,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/36",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 6,
+      "incorrect": 0,
+      "scored": 6,
+      "scheduled": 50,
+      "unscored": 44,
+      "unscored_causes": {
+        "TASK_TIMEOUT": 44
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/37",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 6,
+      "incorrect": 1,
+      "scored": 7,
+      "scheduled": 50,
+      "unscored": 43,
+      "unscored_causes": {
+        "TASK_TIMEOUT": 13,
+        "INTERRUPTED": 1,
+        "MISSING": 29
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/38",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/39",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/40",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/41",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/42",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/43",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/44",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/45",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/46",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/47",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/48",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/49",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/50",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/51",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/52",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/53",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/54",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/55",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/56",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/57",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/58",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/59",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/60",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/61",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/62",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/63",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/64",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/65",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/66",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/67",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/68",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/69",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/70",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/1/results/71",
+      "display_status": "Missing/interrupted \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "MISSING": 50
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/2/results/0",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 29,
+      "incorrect": 4,
+      "scored": 33,
+      "scheduled": 50,
+      "unscored": 17,
+      "unscored_causes": {
+        "TASK_TIMEOUT": 12,
+        "QUERY_ERROR": 4,
+        "QUERY_TIMEOUT": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/2/results/1",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 38,
+      "incorrect": 7,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 4,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/2/results/2",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 23,
+      "incorrect": 24,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 2,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/2/results/3",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 36,
+      "incorrect": 11,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/0",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 46,
+      "incorrect": 1,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "QUERY_TIMEOUT": 2,
+        "QUERY_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/1",
+      "display_status": "All scheduled scored",
+      "correct": 49,
+      "incorrect": 1,
+      "scored": 50,
+      "scheduled": 50,
+      "unscored": 0,
+      "unscored_causes": {}
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/2",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 30,
+      "incorrect": 19,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "unscored_causes": {
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/3",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 48,
+      "incorrect": 1,
+      "scored": 49,
+      "scheduled": 50,
+      "unscored": 1,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/4",
+      "display_status": "Unscored \u00b7 cause not established",
+      "correct": 42,
+      "incorrect": 3,
+      "scored": 45,
+      "scheduled": 50,
+      "unscored": 5,
+      "unscored_causes": {
+        "QUERY_ERROR": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/5",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 18,
+      "incorrect": 1,
+      "scored": 19,
+      "scheduled": 50,
+      "unscored": 31,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 3,
+        "MISSING": 27
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/6",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 35,
+      "incorrect": 13,
+      "scored": 48,
+      "scheduled": 50,
+      "unscored": 2,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 1,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/3/results/7",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 44,
+      "incorrect": 3,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 2,
+        "INFRA_ERROR": 1
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/4/results/0",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 39,
+      "incorrect": 2,
+      "scored": 41,
+      "scheduled": 50,
+      "unscored": 9,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "QUERY_ERROR": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/4/results/1",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 28,
+      "incorrect": 16,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/4/results/2",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 16,
+      "incorrect": 26,
+      "scored": 42,
+      "scheduled": 50,
+      "unscored": 8,
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/4/results/3",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 31,
+      "incorrect": 16,
+      "scored": 47,
+      "scheduled": 50,
+      "unscored": 3,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/0",
+      "display_status": "Timeout-affected \u00b7 unscored",
+      "correct": 44,
+      "incorrect": 0,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 2,
+        "QUERY_TIMEOUT": 1,
+        "QUERY_ERROR": 3
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/1",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 26,
+      "incorrect": 17,
+      "scored": 43,
+      "scheduled": 50,
+      "unscored": 7,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/2",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 31,
+      "incorrect": 2,
+      "scored": 33,
+      "scheduled": 50,
+      "unscored": 17,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 11,
+        "QUERY_ERROR": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/3",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 24,
+      "incorrect": 20,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 6
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/4",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/5",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/6",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/5/results/7",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 0,
+      "incorrect": 0,
+      "scored": 0,
+      "scheduled": 50,
+      "unscored": 50,
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 47
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/6/results/0",
+      "display_status": "Output-validation issue \u00b7 unscored",
+      "correct": 29,
+      "incorrect": 2,
+      "scored": 31,
+      "scheduled": 50,
+      "unscored": 19,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 17,
+        "QUERY_ERROR": 2
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/6/results/1",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 34,
+      "incorrect": 10,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "INFRA_ERROR": 2,
+        "OUTPUT_INVALID": 4
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/6/results/2",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 2,
+      "incorrect": 0,
+      "scored": 2,
+      "scheduled": 50,
+      "unscored": 48,
+      "unscored_causes": {
+        "INFRA_ERROR": 3,
+        "MISSING": 45
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/6/results/3",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 20,
+      "incorrect": 16,
+      "scored": 36,
+      "scheduled": 50,
+      "unscored": 14,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 7,
+        "TASK_TIMEOUT": 2,
+        "INFRA_ERROR": 5
+      }
+    },
+    {
+      "source_ref": "analysis.json#/analyses/6/results/4",
+      "display_status": "Provider/infra issue \u00b7 unscored",
+      "correct": 35,
+      "incorrect": 9,
+      "scored": 44,
+      "scheduled": 50,
+      "unscored": 6,
+      "unscored_causes": {
+        "OUTPUT_INVALID": 5,
+        "INFRA_ERROR": 1
+      }
+    }
+  ]
+}

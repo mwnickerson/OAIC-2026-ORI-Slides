@@ -1,6 +1,6 @@
 # Campaign reports
 
-The seven campaigns below are the sources of the [recent-run analysis](ori-recent-runs-2026-10-04/analysis.md). Each directory includes its original report Markdown, public report JSON, aggregate CSV, and lifecycle snapshot. No task transcripts or private answer manifests are included.
+The seven campaigns below are the sources of the [recent-run analysis](ori-recent-runs-2026-10-04/analysis.md). Each directory includes its original report Markdown, public report JSON, aggregate CSV, and lifecycle snapshot. No task transcripts or private answer manifests are included. A dated snapshot of all seven campaigns and the scoring/cause ledgers is also preserved in [history/2026-10-04](../history/2026-10-04/README.md).
 
 | Campaign | Rows | Report | Results | Machine-readable report | Lifecycle |
 |---|---:|---|---|---|---|
