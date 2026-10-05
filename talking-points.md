@@ -30,17 +30,17 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 - Seeded names and graph choices fill roles in prescribed attack-path templates. Departments and built-in groups follow fixed rules, so changing the seed need not change every element.
 - The generator writes a ZIP and manifest. Task questions compile separately using entities from that environment; the seed does not select question templates. Current scope stays seed 67 only. [Mechanics and audit limits](references/data/ref-12-seed-mechanics.md).
 
-## 05 — [The first win was a very small question](slides/ori-oaic-2026.pdf#page=5)
-
-- My first proof of concept used a small model on my RTX 3080. I don't remember which model. After struggling with ingestion, seeing it work surprised me.
-- An early example, reconstructed from verification notes, asked which user had an active session on a particular workstation.
-- That's small enough to check by hand. If the relationship never reached BloodHound, a more elaborate prompt won't put it back.
-
-## 06 — [Before reasoning, the data had to load](slides/ori-oaic-2026.pdf#page=6)
+## 05 — [Before reasoning, the data had to load](slides/ori-oaic-2026.pdf#page=5)
 
 - BloodHound initially couldn't read what I generated: missing fields, wrong edges, wrong node labels. I was fixing JSON before learning much about the model.
 - My rough progress indicator was upload versus ingestion failure. Failed to upload meant very bad; failed to ingest meant I was getting closer.
 - Fixes included `functionallevel`, `GPOChanges`, and how I represented `AdminTo`. An edge in my generator wasn't enough; the imported graph was what mattered.
+
+## 06 — [The first win was a very small question](slides/ori-oaic-2026.pdf#page=6)
+
+- My first proof of concept used a small model on my RTX 3080. I don't remember which model. After struggling with ingestion, seeing it work surprised me.
+- An early example, reconstructed from verification notes, asked which user had an active session on a particular workstation.
+- That's small enough to check by hand. If the relationship never reached BloodHound, a more elaborate prompt won't put it back.
 
 ## 07 — [A random seed does not stop the clock](slides/ori-oaic-2026.pdf#page=7)
 
