@@ -15,7 +15,7 @@ The final scorecard and token breakdown use reference **13**, a reproducible per
 | [9] | Saved tool-output size and reconstructed request core | Slide 27 | [ref-09-request-size.json](data/ref-09-request-size.json) |
 | [10] | Native-report right/wrong/scored/unscored ledger | Scoring methodology and backing detail | [Question scoring ledger](../reports/ori-recent-runs-2026-10-04/question-scoring-ledger.json) |
 | [11] | Native-report coverage and status labels | Backing detail | [Presentation status ledger](../reports/ori-recent-runs-2026-10-04/presentation-status-ledger.json) |
-| [12] | Seed streams, generation and task compilation | Slide 4 | [Seed mechanics](data/ref-12-seed-mechanics.md) |
+| [12] | Seed streams, generation and task compilation | Slide 19 | [Seed mechanics](data/ref-12-seed-mechanics.md) |
 | [13] | Final three-run scores and input/output token usage | Slides 25–26 | [Explanation and tables](data/ref-13-final-benchmark.md) · [JSON](data/ref-13-final-benchmark.json) · [CSV](data/ref-13-final-benchmark.csv) |
 
 Reference 13 selects three repetitions per model/route. GPT-6 Luna/Steven uses original repetitions 1 and 2 plus the full rerun replacing repetition 3: 147/150 correct, one wrong, two unscored. It does not reuse rerun answers to repair other repetitions or mix original and rerun answers into a best-of result. Qwen Flash is kept distinct from the earlier local Qwen model. The JSON records source runs, source repetitions, hashes and scoring/usage definitions.

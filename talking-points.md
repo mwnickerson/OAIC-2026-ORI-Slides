@@ -23,111 +23,111 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 - GOAD was context, not ORI's starting dataset. I worried about familiarity; I don't have evidence that a particular model memorized it.
 - A result mixes the model, tools, graph, and question. I needed to hold the test still for comparisons and change the environment deliberately.
 
-## 04 — [Same seed. Same test.](slides/ori-oaic-2026.pdf#page=4)
-
-- Seed 67 has no special meaning. It starts repeatable pseudorandom choices for the generated environment—not the model's own randomness. Pin the generator version, profile, and settings as well as the seed.
-- Identity and size use separate seeded streams. The identity stream is `seeded-benchmark-v1:complex:67:identity`; it chooses a fictional company and domain from fixed lists. The complex base ranges are 4,500–5,500 users, 1,750–2,250 workstations, and 400–600 servers. Templates can add entities beyond these base counts.
-- Seeded names and graph choices fill roles in prescribed attack-path templates. Departments and built-in groups follow fixed rules, so changing the seed need not change every element.
-- The generator writes a ZIP and manifest. Task questions compile separately using entities from that environment; the seed does not select question templates. Current scope stays seed 67 only. [Mechanics and audit limits](references/data/ref-12-seed-mechanics.md).
-
-## 05 — [Before reasoning, the data had to load](slides/ori-oaic-2026.pdf#page=5)
+## 04 — [Before reasoning, the data had to load](slides/ori-oaic-2026.pdf#page=4)
 
 - BloodHound initially couldn't read what I generated: missing fields, wrong edges, wrong node labels. I was fixing JSON before learning much about the model.
 - My rough progress indicator was upload versus ingestion failure. Failed to upload meant very bad; failed to ingest meant I was getting closer.
 - Fixes included `functionallevel`, `GPOChanges`, and how I represented `AdminTo`. An edge in my generator wasn't enough; the imported graph was what mattered.
 
-## 06 — [The first win was a very small question](slides/ori-oaic-2026.pdf#page=6)
+## 05 — [The first win was a very small question](slides/ori-oaic-2026.pdf#page=5)
 
 - My first proof of concept used a small model on my RTX 3080. I don't remember which model. After struggling with ingestion, seeing it work surprised me.
 - An early example, reconstructed from verification notes, asked which user had an active session on a particular workstation.
 - That's small enough to check by hand. If the relationship never reached BloodHound, a more elaborate prompt won't put it back.
 
-## 07 — [A random seed does not stop the clock](slides/ori-oaic-2026.pdf#page=7)
-
-- A later repeatability problem was literal: the clock was still running. Seeded offsets repeated, but their wall-clock base changed.
-- Normalizing fields such as `pwdlastset` and `lastlogon` addressed data timestamps. ZIP entry timestamps needed separate handling.
-- Identical parsed JSON doesn't guarantee an identical archive. I want to know that a changed score didn't come from quietly changing the test data.
-
-## 08 — [From graph to grade](slides/ori-oaic-2026.pdf#page=8)
+## 06 — [From graph to grade](slides/ori-oaic-2026.pdf#page=6)
 
 - Generate the graph and tasks, import into BloodHound, give the model its public question, execute its query or tool loop, then grade and save the result.
 - The model gets the acceptance rules, not the private reference answer.
 - The documented early Direct harness executed reference and model Cypher, then compared results using task rules. It didn't just ask whether the query looked like mine. Contract versions belong with results.
 
-## 09 — [Two routes to the same graph](slides/ori-oaic-2026.pdf#page=9)
+## 07 — [Two routes to the same graph](slides/ori-oaic-2026.pdf#page=7)
 
 - Direct asks the model for a Cypher query; the harness executes it and evaluates the result.
 - MCP gives the model a tool loop: request a tool, receive an observation, decide what comes next, and submit an answer.
 - Both depend on BloodHound evidence. One Direct query can traverse a long path. Shared questions don't mean identical interfaces or scoring contracts.
 
-## 10 — [The prompt is part of the experiment](slides/ori-oaic-2026.pdf#page=10)
+## 08 — [The prompt is part of the experiment](slides/ori-oaic-2026.pdf#page=8)
 
 - Historical Direct instructions required only a Cypher query, without explanation or markdown. That was a bare-query contract.
 - The current ordinary runner uses JSON. MCP requires one object matching `submission_schema` and says, "Do not invent graph evidence." Direct uses JSON containing a bounded read-only query and declared assertions.
 - Changing the answer shape or what the parser accepts changes the experiment, even when the graph question sounds the same.
 
-## 11 — [My grader missed correct answers](slides/ori-oaic-2026.pdf#page=11)
+## 09 — [My grader missed correct answers](slides/ori-oaic-2026.pdf#page=9)
 
 - My earliest scorer was barebones. Exact matching missed some correct answers, so I had to improve it before trusting the score.
 - The documented Phase 2 grader executed queries and compared results. Different query text can produce the right evidence.
 - Later, identity aliases mattered too: an object ID and display name can name the same entity. Normalization should recognize correct work, not replace a wrong entity with the one I wanted.
 
-## 12 — [From local GPUs to hosted models](slides/ori-oaic-2026.pdf#page=12)
+## 10 — [From local GPUs to hosted models](slides/ori-oaic-2026.pdf#page=10)
 
 - I started with an M4 Mac, a 3080, and a 3090. I still want a useful smallish model, especially with an MCP.
 - Codex-login support expanded access to OpenAI models; thanks to Adam Chester for that implementation. OpenAI-compatible providers added routes such as NOUS Portal and OpenRouter.
 - The ORI runner and model inference can live in different places. A report saved on my GPU rig doesn't prove the weights ran there.
 
-## 13 — [When the easy questions stopped helping](slides/ori-oaic-2026.pdf#page=13)
+## 11 — [When the easy questions stopped helping](slides/ori-oaic-2026.pdf#page=11)
 
 - With frontier models available, earlier questions were often too easy to tell me what I wanted to know. Many needed one correct query.
 - One query is not one graph hop. I wanted intermediate steps the model had to investigate and connect.
 - Tasks progressed toward combined techniques, longer chains, misleading alternatives, and nonviable routes. More nodes alone aren't the interesting part; the permissions have to connect into a useful path.
 
-## 14 — [From finding a path to explaining it](slides/ori-oaic-2026.pdf#page=14)
+## 12 — [From finding a path to explaining it](slides/ori-oaic-2026.pdf#page=12)
 
 - An early saved question asked for a full attack path between a user and a domain controller. The recovered trace had a Cypher error; it wasn't a successful answer.
 - The later Tier 6 template asks for multiple lookups, the host/user/group sequence, each hop's mechanism, and the terminal Tier 0 condition.
 - It also asks the model to reject attractive dead ends. I want to inspect how the intermediate steps connect.
 
-## 15 — [Four hosts to Domain Admins](slides/ori-oaic-2026.pdf#page=15)
+## 13 — [Four hosts to Domain Admins](slides/ori-oaic-2026.pdf#page=13)
 
 - This generator template has four hosts and nine relationships: an initial `CanPSRemote` foothold, followed by session discoveries and administrative pivots.
 - `HasSession` goes from computer to user; `AdminTo` goes from principal to computer. The model must preserve which identity gains the next access, ending at Domain Admins membership.
 - The code's three-host name counts three administrative pivots after the foothold. The actual chain uses four machines and has no decoy branch.
 
-## 16 — [Same path. Real graph.](slides/ori-oaic-2026.pdf#page=16)
+## 14 — [Same path. Real graph.](slides/ori-oaic-2026.pdf#page=14)
 
 - This is the same session-pivot chain imported into BloodHound from ORI's seed-67 dataset.
 - Starting with SWEAVER, `CanPSRemote` reaches the first host. Sessions and the next identity's `AdminTo` access lead to MBRADLEY and Domain Admins membership.
 - The relationship directions matter; the model can't invent a shortcut. This demonstrates the imported graph, not that a model solved the task.
 
-## 17 — [A tool call in name only](slides/ori-oaic-2026.pdf#page=17)
+## 15 — [A tool call in name only](slides/ori-oaic-2026.pdf#page=15)
 
 - Qwen2.5-Coder 14B led an early Direct cohort but failed in the MCP workflow by emitting pseudo-tool-call JSON.
 - Printing a tool name and arguments isn't issuing a call, receiving a result, and using it. I need the interaction record to tell the difference.
 - Provider failure, invalid output, and never submitting a final answer need different fixes from a wrong path. One bad score hides those distinctions.
 
-## 18 — [The answer was there. Parsing hid it.](slides/ori-oaic-2026.pdf#page=18)
+## 16 — [The answer was there. Parsing hid it.](slides/ori-oaic-2026.pdf#page=16)
 
 - The September 26 BloodHound MCP audit started with a recorded 3/50 correct.
 - An offline diagnostic extracted existing JSON from surrounding prose and fences. With answer facts unchanged, the saved outputs yielded 34/50.
 - There were no new model calls or repaired entities. This was a diagnostic replay, not a replacement official score.
 - A later fresh Qwen run also scored 34/50. That matching number is coincidence, not the same evidence.
 
-## 19 — [Beyond the score](slides/ori-oaic-2026.pdf#page=19)
+## 17 — [Beyond the score](slides/ori-oaic-2026.pdf#page=17)
 
 - Right plus wrong equals scored; scored plus unscored equals scheduled. Attempted requests are a different count. An infrastructure error, invalid output, query error, timeout, or missing evaluation is not automatically a scored wrong answer.
 - Keep final unscored-question causes separate from historical retries, tool-error events, campaign lifecycle, and teardown notes. Cleanup can fail after usable answers have already been scored.
 - Alongside outcomes, ORI retains model prompts/answers and provider-exposed reasoning, queries, tool and resource activity, reported usage/timing, and run identities. Availability is provider-dependent; exposed reasoning is not access to hidden internal reasoning.
 - The corrected [question ledger](reports/ori-recent-runs-2026-10-04/question-scoring-ledger.json) and [status ledger](reports/ori-recent-runs-2026-10-04/presentation-status-ledger.json) explain the coverage counts.
 
-## 20 — [Benchmarks on a budget](slides/ori-oaic-2026.pdf#page=20)
+## 18 — [Benchmarks on a budget](slides/ori-oaic-2026.pdf#page=18)
 
 - I wanted runs to finish in roughly one to two hours without becoming extremely expensive, not a guarantee for every campaign.
 - I focused on smaller, Flash, and affordable models, generally targeting paid APIs below $5 per million output tokens. That's a selection target, not measured task cost.
 - Anthropic API costs were prohibitive for my budget. This isn't a strongest-model leaderboard.
 - September 28 and the newer matrix requested 8,192 output tokens per response, 600 seconds per Direct task, and 1,200 per MCP task. Other settings differ; an MCP task can contain multiple responses.
+
+## 19 — [Same seed. Same test.](slides/ori-oaic-2026.pdf#page=19)
+
+- Seed 67 has no special meaning. It starts repeatable pseudorandom choices for the generated environment—not the model's own randomness. Pin the generator version, profile, and settings as well as the seed.
+- Identity and size use separate seeded streams. The identity stream is `seeded-benchmark-v1:complex:67:identity`; it chooses a fictional company and domain from fixed lists. The complex base ranges are 4,500–5,500 users, 1,750–2,250 workstations, and 400–600 servers. Templates can add entities beyond these base counts.
+- Seeded names and graph choices fill roles in prescribed attack-path templates. Departments and built-in groups follow fixed rules, so changing the seed need not change every element.
+- The generator writes a ZIP and manifest. Task questions compile separately using entities from that environment; the seed does not select question templates. Current scope stays seed 67 only. [Mechanics and audit limits](references/data/ref-12-seed-mechanics.md).
+
+## 20 — [A random seed does not stop the clock](slides/ori-oaic-2026.pdf#page=20)
+
+- A later repeatability problem was literal: the clock was still running. Seeded offsets repeated, but their wall-clock base changed.
+- Normalizing fields such as `pwdlastset` and `lastlogon` addressed data timestamps. ZIP entry timestamps needed separate handling.
+- Identical parsed JSON doesn't guarantee an identical archive. I want to know that a changed score didn't come from quietly changing the test data.
 
 ## 21 — [One run isn't the whole story](slides/ori-oaic-2026.pdf#page=21)
 

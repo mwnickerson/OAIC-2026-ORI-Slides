@@ -1,6 +1,6 @@
 # Seed and environment generation
 
-Reference [12] for slide 4. This explanation was checked against generator and task-compilation source at revision `0f0eaa8e10f65c897c2a07f03033a31b874e5a01`. It is a source audit, not a new benchmark or full regeneration test.
+Reference [12] for slide 19. This explanation was checked against generator and task-compilation source at revision `0f0eaa8e10f65c897c2a07f03033a31b874e5a01`. It is a source audit, not a new benchmark or full regeneration test.
 
 ## What the seed controls
 
