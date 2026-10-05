@@ -155,78 +155,58 @@ A condensed outline of Matthew Nickerson's OAIC 2026 talk, in slide order.
 - V29 Direct used five passes of 42 fixed tasks: 210 scheduled evaluations per model. GPT-5.5, Daybreak Red, Daybreak Blue, and GPT-5.6 Sol scored 207, 206, 205, and 204.
 - Their observed ranges overlap and aren't confidence intervals. Small differences don't establish durable ordering; neither panel belongs in an average with current shared-question runs.
 
-## 25 — [The questions that never ran](slides/ori-oaic-2026.pdf#page=25)
+## 25 — [Three passes, final scores](slides/ori-oaic-2026.pdf#page=25)
 
-- Local Qwen attempted 205 of 250 scheduled evaluations. In Direct/BloodHound/Mordavid/Armadin/Steven order: right counts are 29/34/2/20/35; wrong counts 2/10/0/16/9; scored counts 31/44/2/36/44; unscored counts 19/6/48/14/6. Each scheduled denominator is 50.
-- Mordavid attempted five: two right, no scored wrong answers, three infrastructure outcomes, and 45 not run after the cutoff. Its 48 unscored evaluations are not 48 reasoning mistakes.
-- Steven produced 35 right and nine wrong answers; five invalid outputs and one infrastructure outcome were unscored. Later cleanup is a separate teardown issue, not a failed benchmark verdict. All five route results and their limitations remain visible.
+- The final benchmark repeats the same 50 seed-67 questions three times: 150 scheduled evaluations per model–route pairing, not 150 distinct questions or three environments.
+- In Direct / BloodHound MCP / Armadin / Steven order, correct totals are GPT-6 Luna 128 / 145 / 95 / 147; GLM 113 / 73 / 51 / 87; DeepSeek 99 / 82 / 73 / 104; Qwen Flash 96 / 82 / 26 / 70.
+- GPT-6 Luna with Steven has 147 right, one wrong, 148 scored and two unscored, with all 150 attempted. Correct counts per pass are 50, 48 and 49.
+- Qwen Flash with Armadin attempted 101 of 150 and scored 75: 26 right, 49 wrong and 75 unscored. Its coverage gap belongs to that row only.
+- The model–tool pairing matters. This is one fixed question set, and Direct and MCP use different scoring contracts; it is not a universal ranking. Keep per-pass results and unscored coverage visible.
+- [Final benchmark selection and exact score/token tables](references/data/ref-13-final-benchmark.md).
 
-## 26 — [Direct and MCP can disagree](slides/ori-oaic-2026.pdf#page=26)
+## 26 — [Where the tokens went](slides/ori-oaic-2026.pdf#page=26)
 
-- On September 28, GLM Direct had 44 right, zero wrong, 44 scored and six unscored; GLM BloodHound had 26 right, 17 wrong, 43 scored and seven unscored. Both attempted all 50.
-- Qwen Direct had 31 right, two wrong, 33 scored and 17 unscored; Qwen BloodHound had 24 right, 20 wrong, 44 scored and six unscored. Both also attempted all 50.
-- Four separate login-provider groups—GPT-6 Luna and GPT-5.6 Luna, each through Direct and BloodHound—attempted three each. Each has zero scored and 50 unscored: three infrastructure outcomes plus 47 not run. That is not a measured zero reasoning score, and authentication is not established as the cause.
-- Direct and MCP use different scoring contracts. Same questions alone do not prove a causal tool advantage.
+- Token usage covers the same selected final three-pass benchmark. The table reports exact input, output and total tokens for every model–route pairing, plus input share.
+- GPT-6 Luna with Steven used 2,998,934 input and 163,979 output tokens: 3,162,913 total, 94.8% input. GPT-6 Luna with Armadin used 22,367,623 input and 188,412 output: 22,556,035 total, 99.2% input.
+- The selected-run totals include recorded retry attempts and exclude the superseded whole repetition. They are not whole-project spending.
+- Qwen Flash with Armadin has 101/150 attempted coverage, so its raw token total is not a like-for-like full-run cost comparison. All other displayed pairings attempted 150/150.
+- MCP can accumulate tool schemas, returned data and previous turns in repeated requests. Provider-reported token volume is not a verified dollar bill; billing and cache breakdowns are missing.
+- [Final benchmark selection and exact score/token tables](references/data/ref-13-final-benchmark.md).
 
-## 27 — [The model–MCP matchup](slides/ori-oaic-2026.pdf#page=27)
+## 27 — [When the API rejects the request](slides/ori-oaic-2026.pdf#page=27)
 
-- Read the large fractions as right out of 50 scheduled, and the smaller S/W/U labels as scored, wrong and unscored. The corrected coverage supplements rather than rewrites the original right counts.
-- In Direct/BloodHound/Armadin/Steven order: GLM is 39/28/16/31; GPT-6 Luna 46/49/30/48; GPT-5.6 Luna 42/18/35/44; DeepSeek 29/38/23/36.
-- GPT-6 BloodHound is 49 right, one wrong and zero unscored. GPT-5.6 BloodHound is 18 right, one wrong and 31 unscored: 27 not run, three infrastructure outcomes and one invalid output. It attempted 23 evaluations.
-- DeepSeek Direct has 29 right, four wrong and 17 unscored. Unscored causes and later cleanup are not scored wrong answers. These are single-pass model–route observations under different settings, not a universal ranking.
+- One saved analyze_group_permissions response contained 3,710,830 characters/UTF-8 bytes. That tool output becomes part of the conversation sent back to the model.
+- Saved messages plus 97 tool schemas reconstruct to 4,486,453–4,486,502 compact UTF-8 bytes, about 4.49 MB. This is a reconstructed request core, not captured HTTP wire bytes or a measured token count.
+- HTTP 400 rejections were observed, but the provider rejection body was not saved. The exact cause and size/context limit remain unknown; size is not established as the cause.
+- This is a request-design observation, not a deduction from the final scores. Keep useful tool evidence without returning an entire world of data for every step.
+- [Sanitized request-size evidence](references/data/ref-09-request-size.json).
 
-## 28 — [Where the tokens went](slides/ori-oaic-2026.pdf#page=28)
-
-- September 28 BloodHound MCP usage: GLM used 4,897,552 reported tokens, 95.1% input, with 423 tool requests and four failed tool responses. Qwen used 6,239,067 tokens, 95.4% input, with 504 requests and ten failed responses.
-- Both attempted 50 evaluations, but GLM scored 43 with seven unscored, and Qwen scored 44 with six unscored. Tool errors are events, not wrong-answer counts.
-- The volume tells me where to inspect tool interaction. It does not by itself prove waste or establish a dollar cost; missing usage elsewhere is not zero.
-
-## 29 — [Three passes, same questions](slides/ori-oaic-2026.pdf#page=29)
-
-- This campaign scheduled three passes over the same 50 seed-67 questions, not 150 different questions or three environments. Read totals against 150 scheduled and keep the per-pass scores visible.
-- Direct/BloodHound/Armadin/Steven right totals are GPT-6 Luna 128/145/95/117; GLM 113/73/51/87; DeepSeek 99/82/73/104. GPT BloodHound's 145 right plus two wrong equals 147 scored, with three unscored; its right counts per pass are 47, 49 and 49.
-- GPT Steven has 117 right, zero wrong and 33 unscored; it attempted 123. Local Qwen Direct has 12 right, one wrong and 137 unscored; it attempted 71. The interrupted per-repetition counter anomaly remains documented in the reports, not silently normalized.
-- Other local-Qwen routes, Muse and Gemma account for 1,650 scheduled evaluations with none attempted or scored. They are coverage gaps, not evidence of zero capability. Recovery remains separate.
-
-## 30 — [Recovery is a separate result](slides/ori-oaic-2026.pdf#page=30)
-
-- The cloud-Qwen recovery is a separate campaign, not a continuation to splice into the local-Qwen results. In Direct/BloodHound/Armadin/Steven order: right counts are 96/82/26/70, wrong 9/52/49/64, scored 105/134/75/134, and unscored 45/16/75/16, each out of 150 scheduled.
-- Armadin attempted 101. Its 75 unscored evaluations comprise 16 infrastructure outcomes, ten invalid outputs and 49 not run—not 75 reasoning failures.
-- GPT-6 Steven is one separate 50-question recovery repetition: 49 right, one wrong, all 50 scored and none unscored. Cleanup happened afterward. Its settings fingerprint differs from the original campaign; it does not replace the original total.
-
-## 31 — [An API rejection isn't a wrong answer](slides/ori-oaic-2026.pdf#page=31)
-
-- The original campaign has 18 latest HTTP 400 outcomes—16 Armadin and two Steven. Recovery Qwen/Armadin has 16 latest HTTP 400 outcomes and 49 unexecuted evaluations. These provider events are not scored wrong answers.
-- One retained tool result contains 3,710,830 characters/UTF-8 bytes. Saved messages plus 97 tool schemas reconstruct to 4,486,453–4,486,502 compact UTF-8 bytes, about 4.49 MB. That is a reconstructed core, not captured HTTP wire bytes.
-- The 34 historical failed attempts are a different count: 26 belong to ultimately infrastructure-error records, eight to ultimately completed records. Completion does not prove correctness, and retries are not distinct unscored questions.
-- The provider rejection body and limit were not saved. Request size is useful evidence to investigate, not proof of the rejection cause or a verified fix.
-
-## 32 — [The next questions for ORI](slides/ori-oaic-2026.pdf#page=32)
+## 28 — [The next questions for ORI](slides/ori-oaic-2026.pdf#page=28)
 
 - I want to generate Azure BloodHound data and test reasoning over its cloud identity attack paths.
 - Then I'd like OpenGraph data, starting with collectors such as GitHound and JamfHound.
 - I'm interested in model-as-judge approaches, possibly Jev or an open-source alternative, checked against known answers before relying on them.
 - I'd also like to test Fable, Astra, and Kimi when budget permits. These are research ideas and next steps, not finished capabilities or results.
 
-## 33 — [The score is a starting point](slides/ori-oaic-2026.pdf#page=33)
+## 29 — [The score is a starting point](slides/ori-oaic-2026.pdf#page=29)
 
 - I want people to run models they care about: small or large, local or hosted, through MCP or Direct Cypher.
 - Learn the setup's shortcomings before treating a plausible answer as reliable. ORI tests bounded graph reasoning, not general offensive capability.
 - The questions need to stay useful, and the harness needs scrutiny. Some failures belonged to my benchmark. Keep configuration and failures with the score, then improve the model, agent, or tools.
 
-## 34 — [Your next benchmark](slides/ori-oaic-2026.pdf#page=34)
+## 30 — [Your next benchmark](slides/ori-oaic-2026.pdf#page=30)
 
 - ORI's repository is `offensive-reasoning-index` under SpecterOps on GitHub.
 - Run the models and tool setups you care about.
 - Inspect where they fall short.
 
-## 35 — [Acknowledgements](slides/ori-oaic-2026.pdf#page=35)
+## 31 — [Acknowledgements](slides/ori-oaic-2026.pdf#page=31)
 
 - Competition drives innovation. Without other people's BloodHound MCP work, I probably wouldn't have come up with ORI.
 - I'm especially thankful to Brett from Armadin for his blog post and for answering my questions about their MCP and evaluation approach.
 - Thank you to the Armadin team, Steven, and MorDavid for their MCPs.
 - Thanks to SpecterOps for BloodHound and internal testing, especially Blaise; and to Kyle from Outflank for contributions to my BloodHound MCP.
 
-## 36 — [References](slides/ori-oaic-2026.pdf#page=36)
+## 32 — [References](slides/ori-oaic-2026.pdf#page=32)
 
-- Unspoken reference appendix: [1–9](references/README.md) retain the original aggregate and diagnostic meanings; [10–11](reports/ori-recent-runs-2026-10-04/) supply corrected final scoring and coverage; [12](references/data/ref-12-seed-mechanics.md) explains environment generation and the seed. Original campaign boundaries, raw diagnostic meanings and recovery separation remain intact.
+- Unspoken appendix. [13](references/data/ref-13-final-benchmark.md) supplies the final three-pass selection, scores, coverage and exact token totals; [12](references/data/ref-12-seed-mechanics.md) explains generation and the seed. [Earlier references](references/README.md) retain their historical or diagnostic meanings.

@@ -4,7 +4,7 @@ Matthew Nickerson · Offensive AI Con 2026 · Offensive Reasoning Index (ORI)
 
 ## Slides and talking points
 
-- [Slides — 36-page PDF](slides/ori-oaic-2026.pdf)
+- [Slides — 32-page PDF](slides/ori-oaic-2026.pdf)
 - [Speaker-style talking-points outline](talking-points.md), following the slide order and the spoken script
 - [References and cited result files](references/README.md)
 
@@ -20,7 +20,9 @@ The October 4, 2026 report snapshot covers **seven campaigns, 114 aggregate rows
 
 The current benchmark scope is **seed 67 only**; the planned three-seed expansion is cancelled. The existing three-pass results repeat the same 50 questions, not three environments or 150 unique questions. Earlier development scorecards in the talk remain historical context, not additional current-seed cohorts.
 
-Keep each campaign's cohort, settings, repetition, and coverage with its score. These reports include interrupted runs, infrastructure failures, and unattempted slots; they are not a pooled leaderboard. Recovery runs are separate results, and unattempted work is not measured zero capability.
+The post-demo results sequence is: Early local scorecards → Different tests → Final three-run benchmark → Token usage → API rejections.
+
+The [final scorecard and token breakdown](references/data/ref-13-final-benchmark.md) use an explicit per-repetition selection. GPT-6 Luna / Steven is **147/150**, from 50, 48 and 49 correct; its affected third repetition is replaced wholesale by the full rerun. Remaining coverage gaps belong to their own model/route rows. Native campaign reports and historical model cards remain available below as supporting records, not the talk’s final selected scorecard.
 
 This repository contains the slide PDF, talking points, reports, model cards, and references—not private rehearsal notes, raw conversations, or production scripts. Machine-specific source paths were shortened in the analysis Markdown and JSON; the original per-run reports, CSVs, and model cards are unchanged.
 

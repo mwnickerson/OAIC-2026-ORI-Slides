@@ -1,5 +1,7 @@
 # Campaign reports
 
+For the talk’s current scorecard, start with the [final three-run selection and token breakdown](../references/data/ref-13-final-benchmark.md). It explicitly replaces the affected GPT-6 Luna/Steven third repetition with its full rerun, yielding 147/150; Armadin’s incomplete coverage does not change Steven’s score. The source reports and historical cards below remain unchanged.
+
 Read the corrected Markdown model cards and JSON ledgers for complete repetition coverage and unscored causes. Compact SVG/PNG cards omit some rows and shorten some cause lists; they are summaries, not replacements for the full tables.
 
 The seven campaigns below are the sources of the [recent-run analysis](ori-recent-runs-2026-10-04/analysis.md). Each directory includes its original report Markdown, public report JSON, aggregate CSV, and lifecycle snapshot. No task transcripts or private answer manifests are included. A dated snapshot of all seven campaigns and the scoring/cause ledgers is also preserved in [history/2026-10-04](../history/2026-10-04/README.md).
@@ -16,7 +18,7 @@ The seven campaigns below are the sources of the [recent-run analysis](ori-recen
 
 ## Reading the reports
 
-All 21 cross-campaign comparisons fail the saved compatibility gate; do not pool their scores. The original three-pass campaign and its recovery have different scope. Missing cost values mean not recorded, not zero cost.
+The saved analyzer rejects whole-campaign pooling. The talk instead uses a documented [per-repetition final selection](../references/data/ref-13-final-benchmark.md), including the operator-approved replacement of GPT-6 Luna/Steven repetition 3. This does not combine every original and later row or reuse answers across repetitions. Missing cost values mean not recorded, not zero cost.
 
 The report JSONs include question-level outcome and usage summaries, identifiers, and fingerprints, but no raw model/tool transcripts or reference-answer contents.
 

@@ -1,0 +1,49 @@
+display_model,display_route,repetition,right,wrong,scored,unscored,scheduled,attempted,attempt_records,tokens_input,tokens_output,tokens_total,source_run,source_repetition,source_experiment_id
+GPT-6 Luna,Direct,1,40,1,41,9,50,50,50,69514,27603,97117,seed67-step1-six-models-3rep-3mcp-20260930,1,gpt-6-luna-nous-direct
+GPT-6 Luna,Direct,2,43,2,45,5,50,50,50,69514,27166,96680,seed67-step1-six-models-3rep-3mcp-20260930,2,gpt-6-luna-nous-direct
+GPT-6 Luna,Direct,3,45,0,45,5,50,50,50,69514,25151,94665,seed67-step1-six-models-3rep-3mcp-20260930,3,gpt-6-luna-nous-direct
+GPT-6 Luna,BloodHound MCP,1,47,2,49,1,50,50,50,6759534,63188,6822722,seed67-step1-six-models-3rep-3mcp-20260930,1,gpt-6-luna-nous-mcp-bloodhound_mcp
+GPT-6 Luna,BloodHound MCP,2,49,0,49,1,50,50,50,1729339,69862,1799201,seed67-step1-six-models-3rep-3mcp-20260930,2,gpt-6-luna-nous-mcp-bloodhound_mcp
+GPT-6 Luna,BloodHound MCP,3,49,0,49,1,50,50,50,1825229,64001,1889230,seed67-step1-six-models-3rep-3mcp-20260930,3,gpt-6-luna-nous-mcp-bloodhound_mcp
+GPT-6 Luna,Armadin,1,32,16,48,2,50,50,50,6939957,65526,7005483,seed67-step1-six-models-3rep-3mcp-20260930,1,gpt-6-luna-nous-mcp-armadin
+GPT-6 Luna,Armadin,2,32,15,47,3,50,50,50,7325529,61717,7387246,seed67-step1-six-models-3rep-3mcp-20260930,2,gpt-6-luna-nous-mcp-armadin
+GPT-6 Luna,Armadin,3,31,16,47,3,50,50,50,8102137,61169,8163306,seed67-step1-six-models-3rep-3mcp-20260930,3,gpt-6-luna-nous-mcp-armadin
+GPT-6 Luna,Steven,1,50,0,50,0,50,50,50,955622,53920,1009542,seed67-step1-six-models-3rep-3mcp-20260930,1,gpt-6-luna-nous-mcp-steven_external
+GPT-6 Luna,Steven,2,48,0,48,2,50,50,50,1042358,54367,1096725,seed67-step1-six-models-3rep-3mcp-20260930,2,gpt-6-luna-nous-mcp-steven_external
+GPT-6 Luna,Steven,3,49,1,50,0,50,50,52,1000954,55692,1056646,seed67-qwen38flash-gpt6luna-recovery-20261002,1,gpt-6-luna-nous-mcp-steven_external
+GLM-5.3-Flash,Direct,1,38,3,41,9,50,50,50,70427,155420,225847,seed67-step1-six-models-3rep-3mcp-20260930,1,glm-5.3-flash-nous-direct
+GLM-5.3-Flash,Direct,2,39,4,43,7,50,50,50,70427,126222,196649,seed67-step1-six-models-3rep-3mcp-20260930,2,glm-5.3-flash-nous-direct
+GLM-5.3-Flash,Direct,3,36,1,37,13,50,50,50,68115,126720,194835,seed67-step1-six-models-3rep-3mcp-20260930,3,glm-5.3-flash-nous-direct
+GLM-5.3-Flash,BloodHound MCP,1,23,17,40,10,50,50,50,3873158,238233,4111391,seed67-step1-six-models-3rep-3mcp-20260930,1,glm-5.3-flash-nous-mcp-bloodhound_mcp
+GLM-5.3-Flash,BloodHound MCP,2,26,12,38,12,50,50,50,3420612,206900,3627512,seed67-step1-six-models-3rep-3mcp-20260930,2,glm-5.3-flash-nous-mcp-bloodhound_mcp
+GLM-5.3-Flash,BloodHound MCP,3,24,13,37,13,50,50,50,3580255,215812,3796067,seed67-step1-six-models-3rep-3mcp-20260930,3,glm-5.3-flash-nous-mcp-bloodhound_mcp
+GLM-5.3-Flash,Armadin,1,15,24,39,11,50,50,50,11053249,237281,11290530,seed67-step1-six-models-3rep-3mcp-20260930,1,glm-5.3-flash-nous-mcp-armadin
+GLM-5.3-Flash,Armadin,2,19,22,41,9,50,50,50,12339853,261255,12601108,seed67-step1-six-models-3rep-3mcp-20260930,2,glm-5.3-flash-nous-mcp-armadin
+GLM-5.3-Flash,Armadin,3,17,20,37,13,50,50,50,10473220,238148,10711368,seed67-step1-six-models-3rep-3mcp-20260930,3,glm-5.3-flash-nous-mcp-armadin
+GLM-5.3-Flash,Steven,1,27,18,45,5,50,50,50,3604580,182699,3787279,seed67-step1-six-models-3rep-3mcp-20260930,1,glm-5.3-flash-nous-mcp-steven_external
+GLM-5.3-Flash,Steven,2,30,15,45,5,50,50,50,3784174,168821,3952995,seed67-step1-six-models-3rep-3mcp-20260930,2,glm-5.3-flash-nous-mcp-steven_external
+GLM-5.3-Flash,Steven,3,30,13,43,7,50,50,50,8506073,158462,8664535,seed67-step1-six-models-3rep-3mcp-20260930,3,glm-5.3-flash-nous-mcp-steven_external
+DeepSeek-v4.1-Flash,Direct,1,32,5,37,13,50,50,50,67660,122262,189922,seed67-step1-six-models-3rep-3mcp-20260930,1,deepseek-v4.1-flash-nous-direct
+DeepSeek-v4.1-Flash,Direct,2,35,3,38,12,50,50,50,75667,160100,235767,seed67-step1-six-models-3rep-3mcp-20260930,2,deepseek-v4.1-flash-nous-direct
+DeepSeek-v4.1-Flash,Direct,3,32,3,35,15,50,50,50,75788,187569,263357,seed67-step1-six-models-3rep-3mcp-20260930,3,deepseek-v4.1-flash-nous-direct
+DeepSeek-v4.1-Flash,BloodHound MCP,1,28,18,46,4,50,50,50,3717946,143970,3861916,seed67-step1-six-models-3rep-3mcp-20260930,1,deepseek-v4.1-flash-nous-mcp-bloodhound_mcp
+DeepSeek-v4.1-Flash,BloodHound MCP,2,27,20,47,3,50,50,50,4638146,133760,4771906,seed67-step1-six-models-3rep-3mcp-20260930,2,deepseek-v4.1-flash-nous-mcp-bloodhound_mcp
+DeepSeek-v4.1-Flash,BloodHound MCP,3,27,19,46,4,50,50,50,4579378,137714,4717092,seed67-step1-six-models-3rep-3mcp-20260930,3,deepseek-v4.1-flash-nous-mcp-bloodhound_mcp
+DeepSeek-v4.1-Flash,Armadin,1,25,22,47,3,50,50,50,11429731,137305,11567036,seed67-step1-six-models-3rep-3mcp-20260930,1,deepseek-v4.1-flash-nous-mcp-armadin
+DeepSeek-v4.1-Flash,Armadin,2,26,18,44,6,50,50,50,9656462,143448,9799910,seed67-step1-six-models-3rep-3mcp-20260930,2,deepseek-v4.1-flash-nous-mcp-armadin
+DeepSeek-v4.1-Flash,Armadin,3,22,24,46,4,50,50,50,10767464,140356,10907820,seed67-step1-six-models-3rep-3mcp-20260930,3,deepseek-v4.1-flash-nous-mcp-armadin
+DeepSeek-v4.1-Flash,Steven,1,35,12,47,3,50,50,50,3543294,112405,3655699,seed67-step1-six-models-3rep-3mcp-20260930,1,deepseek-v4.1-flash-nous-mcp-steven_external
+DeepSeek-v4.1-Flash,Steven,2,35,12,47,3,50,50,50,3214823,111013,3325836,seed67-step1-six-models-3rep-3mcp-20260930,2,deepseek-v4.1-flash-nous-mcp-steven_external
+DeepSeek-v4.1-Flash,Steven,3,34,13,47,3,50,50,50,3601558,117168,3718726,seed67-step1-six-models-3rep-3mcp-20260930,3,deepseek-v4.1-flash-nous-mcp-steven_external
+Qwen3.8 Flash,Direct,1,31,3,34,16,50,50,50,72877,223753,296630,seed67-qwen38flash-gpt6luna-recovery-20261002,1,qwen3.8-flash-nous-direct
+Qwen3.8 Flash,Direct,2,35,2,37,13,50,50,50,72877,222265,295142,seed67-qwen38flash-gpt6luna-recovery-20261002,2,qwen3.8-flash-nous-direct
+Qwen3.8 Flash,Direct,3,30,4,34,16,50,50,50,72877,223611,296488,seed67-qwen38flash-gpt6luna-recovery-20261002,3,qwen3.8-flash-nous-direct
+Qwen3.8 Flash,BloodHound MCP,1,28,17,45,5,50,50,50,5190803,269754,5460557,seed67-qwen38flash-gpt6luna-recovery-20261002,1,qwen3.8-flash-nous-mcp-bloodhound_mcp
+Qwen3.8 Flash,BloodHound MCP,2,26,18,44,6,50,50,50,8921784,270805,9192589,seed67-qwen38flash-gpt6luna-recovery-20261002,2,qwen3.8-flash-nous-mcp-bloodhound_mcp
+Qwen3.8 Flash,BloodHound MCP,3,28,17,45,5,50,50,50,5799142,243653,6042795,seed67-qwen38flash-gpt6luna-recovery-20261002,3,qwen3.8-flash-nous-mcp-bloodhound_mcp
+Qwen3.8 Flash,Armadin,1,12,26,38,12,50,50,60,16752225,299148,17051373,seed67-qwen38flash-gpt6luna-recovery-20261002,1,qwen3.8-flash-nous-mcp-armadin
+Qwen3.8 Flash,Armadin,2,14,23,37,13,50,50,59,16081333,260831,16342164,seed67-qwen38flash-gpt6luna-recovery-20261002,2,qwen3.8-flash-nous-mcp-armadin
+Qwen3.8 Flash,Armadin,3,0,0,0,50,50,1,1,58620,3618,62238,seed67-qwen38flash-gpt6luna-recovery-20261002,3,qwen3.8-flash-nous-mcp-armadin
+Qwen3.8 Flash,Steven,1,21,24,45,5,50,50,51,5076049,224279,5300328,seed67-qwen38flash-gpt6luna-recovery-20261002,1,qwen3.8-flash-nous-mcp-steven_external
+Qwen3.8 Flash,Steven,2,26,19,45,5,50,50,50,5078756,229593,5308349,seed67-qwen38flash-gpt6luna-recovery-20261002,2,qwen3.8-flash-nous-mcp-steven_external
+Qwen3.8 Flash,Steven,3,23,21,44,6,50,50,50,4060369,208992,4269361,seed67-qwen38flash-gpt6luna-recovery-20261002,3,qwen3.8-flash-nous-mcp-steven_external
